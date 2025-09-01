@@ -12,7 +12,3 @@ AES-256 (Advanced Encryption Standard with 256-bit keys) is an industry-leading 
 
 # Supported Encryption Methods
 
-|       #NAME        |      #ALGORITHM     |     #ENCODING     |     #API CODE     |
- -------------------- --------------------- ------------------- --------------------
-| AES_256_CBC_BASE64 |        CBC          |     Base64        |    11256          |
- -------------------- --------------------- ------------------- --------------------
