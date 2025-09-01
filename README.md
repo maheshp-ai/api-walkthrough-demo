@@ -12,3 +12,4 @@ AES-256 (Advanced Encryption Standard with 256-bit keys) is an industry-leading 
 
 # Supported Encryption Methods
 
+![Supported Methods](images/img_1.png)
