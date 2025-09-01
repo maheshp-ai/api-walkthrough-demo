@@ -12,7 +12,7 @@ AES-256 (Advanced Encryption Standard with 256-bit keys) is an industry-leading 
 
 # Supported Encryption Methods
 
-![Supported Methods](images/img_1.png)
+<img src="images/img_1.png" alt="Supported Methods" width="500" height="300" align="center">
 
 Follow the below steps for encryoting the data and pushing to CE dashboard.
 
@@ -28,7 +28,7 @@ Generate a SECRET_KEY and SECRET_IV on your system and share the data with us. T
 
 Sharing a sample result of running the above command.
 
-<img src="images/img_2.png" alt="result" width="800" height="500" align="center">
+<img src="images/img_2.png" alt="result" width="600" height="400" align="center">
 
 Now the generated key and iv can be used to encrypt the payload data.
 
