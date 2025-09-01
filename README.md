@@ -12,7 +12,7 @@ AES-256 (Advanced Encryption Standard with 256-bit keys) is an industry-leading 
 
 # Supported Encryption Methods
 
-<img src="images/img_1.png" alt="Supported Methods" width="500" height="300" align="center">
+<img src="images/img_1.png" alt="Supported Methods" width="600" height="400" align="center">
 
 Follow the below steps for encryoting the data and pushing to CE dashboard.
 
