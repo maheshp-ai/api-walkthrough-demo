@@ -87,8 +87,9 @@ curl --location 'https://api2.netcoresmartech.com/v1/activity/upload' \
 }'
 ```
 
-In the above curl request -
-    - 11256 points to AES_256_CBC_BASE64 Algorithm.
-    - x-asset is the same asset id as in the payload encryption.
-    - API key of the panel must be used under Bearer token.
+In the above curl request
+
+- 11256 points to AES_256_CBC_BASE64 Algorithm.
+- x-asset is the same asset id as in the payload encryption.
+- API key of the panel must be used under Bearer token.
   
