@@ -39,7 +39,6 @@ Now the generated key and iv can be used to encrypt the payload data.
 - Sharing the sample usage of the script to encrypt data.
 
 `python3 aes256_data_encryption_script.py '[
-
     {
     
         "asset_id": "392234ga43t3q4t3026227c3453gqe5",
@@ -62,8 +61,7 @@ Now the generated key and iv can be used to encrypt the payload data.
             
         }
         
-    }
-    
+    }    
 ]'`
 
 - The resultant of the above command will be encrypted data. Sample given below.
