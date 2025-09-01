@@ -38,7 +38,7 @@ Now the generated key and iv can be used to encrypt the payload data.
 
 - Sharing the sample usage of the script to encrypt data.
 
-`python3 aes256_data_encryption_script.py '[{
+```python3 aes256_data_encryption_script.py '[{
         "asset_id": "392234ga43t3q4t3026227c3453gqe5",
         "activity_name": "form_submitted",
         "timestamp": "2025-08-26T12:05:43Z",
@@ -50,7 +50,7 @@ Now the generated key and iv can be used to encrypt the payload data.
             "day" : "Tuesday"
         }
     }    
-]'`
+]'```
 
 - The resultant of the above command will be encrypted data. Sample given below.
 
