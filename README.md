@@ -29,6 +29,7 @@ Generate a SECRET_KEY and SECRET_IV on your system and share the data with us. T
 Sharing a sample result of running the above command.
 
 ![Result](images/img_2.png)
+<img src="images/img_2.png" alt="Alt Text" width="500" height="300" align="center">
 
 Now the generated key and iv can be used to encrypt the payload data.
 
