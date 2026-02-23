@@ -34,7 +34,7 @@ Now the generated key and iv can be used to encrypt the payload data.
 
 # Step 2
 
-- Here is a [Python script](script/aes256_data_encryption_script.py) which can be used to encrypt the payload data.
+- Here is a [Python script](script/V2_aes256_data_encryption_script.py) which can be used to encrypt the payload data.
 
 - Sharing the sample usage of the script to encrypt data.
 
