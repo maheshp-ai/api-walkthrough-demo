@@ -13,7 +13,6 @@ AES-256 (Advanced Encryption Standard with 256-bit keys) is an industry-leading 
 # Supported Encryption Methods
 
 AES 256 - GCM (no padding) Encryption -> x-eCode: 11259
-#<img src="images/img_1.png" alt="Supported Methods" width="600" height="400" align="center">
 
 Follow the below steps for encryoting the data and pushing to CE dashboard.
 
