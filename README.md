@@ -12,7 +12,8 @@ AES-256 (Advanced Encryption Standard with 256-bit keys) is an industry-leading 
 
 # Supported Encryption Methods
 
-<img src="images/img_1.png" alt="Supported Methods" width="600" height="400" align="center">
+AES 256 - GCM (no padding) Encryption -> x-eCode: 11259
+#<img src="images/img_1.png" alt="Supported Methods" width="600" height="400" align="center">
 
 Follow the below steps for encryoting the data and pushing to CE dashboard.
 
@@ -28,7 +29,7 @@ Generate a SECRET_KEY and SECRET_IV on your system and share the data with us. T
 
 Sharing a sample result of running the above command.
 
-<img src="images/img_2.png" alt="result" width="600" height="400" align="center">
+#<img src="images/img_2.png" alt="result" width="600" height="400" align="center">
 
 Now the generated key and iv can be used to encrypt the payload data.
 
@@ -77,7 +78,7 @@ Use the below curl command to send the data.
 ```
 curl --location 'https://api2.netcoresmartech.com/v1/activity/upload' \
 --header 'Content-Type: application/json' \
---header 'x-eCode: 11256' \
+--header 'x-eCode: 11259' \
 --header 'x-asset: 392ae07d8b69fe21423e6d9e026227c5' \
 --header 'Authorization: Bearer 06cf420b244adc210b05da30e4731340' \
 --data '{
