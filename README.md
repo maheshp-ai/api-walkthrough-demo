@@ -26,9 +26,7 @@ Generate a SECRET_KEY and SECRET_IV on your system and share the data with us. T
 
 `python3 aes256_key_iv_generator_script.py`
 
-Sharing a sample result of running the above command.
-
-#<img src="images/img_2.png" alt="result" width="600" height="400" align="center">
+This will generate an key for eg - aE5nm923r2FNRjCanEitQtMV4lyHhNr/Dewe2vr=
 
 Now the generated key and iv can be used to encrypt the payload data.
 
