@@ -1,0 +1,132 @@
+{
+    "id": "NC-TFET",
+    "clientName": "Signature Bank",
+    "vertical": "bfsi",
+    "step": 4,
+    "filledBy": "Ashok",
+    "updatedAt": "2026-05-15T16:11:07+05:30",
+    "data": {
+        "clientName": "Signature Bank",
+        "vertical": "bfsi",
+        "region": "Nigeria",
+        "website": "https:\/\/www.signaturebankng.com\/",
+        "primaryKey": "Customer ID",
+        "clientContact": {
+            "name": "Vanessa Wayer",
+            "email": "Vanessa.Wayer@signaturebankng.com",
+            "phone": "+2349165066695"
+        },
+        "startDate": "",
+        "am": "Kishore  Kumar",
+        "amEmail": "kishore.kumar@netcorecloud.com",
+        "pss": "Gargi Sethia",
+        "pssEmail": "gargi.sethia@netcorecloud.com",
+        "dm": "Ashok",
+        "dmEmail": "",
+        "ds": "Mehar Bhalla",
+        "dsEmail": "",
+        "productCombo": "ce-web-app",
+        "products": [
+            "ce"
+        ],
+        "webEnabled": true,
+        "appEnabled": true,
+        "webType": "direct-js",
+        "webPlatform": "native",
+        "shopifyType": "",
+        "magentoVersion": "",
+        "iosMech": "swift",
+        "appSdkType": "react-native",
+        "webPushEnabled": false,
+        "webPushCreds": [],
+        "appPushEnabled": false,
+        "appPushCreds": [],
+        "appFeatures": [],
+        "smsSenderId": "",
+        "dataIngest": "API integration",
+        "apps": [
+            "react-native"
+        ],
+        "pxFeats": [],
+        "appsLive": "",
+        "fcmStatus": "",
+        "stagingApp": "",
+        "datalayer": "",
+        "channels": [
+            "email",
+            "whatsapp"
+        ],
+        "emailWarmup": true,
+        "waType": "migration",
+        "useCases": [
+            {
+                "name": "KYC Completion Journey",
+                "channel": "Email, Web Push, Web Message, App Push",
+                "desc": "Nudge users to complete KYC verification. If downloaded the App nudge them to launch and start KYC",
+                "trigger": "KYC Started",
+                "goal": "KYC Completed",
+                "pre": "KYC events tracked\nChannels active"
+            },
+            {
+                "name": "SIP Renewal Reminder",
+                "channel": "Email, Web Message, App Push",
+                "desc": "Remind customers to renew their SIP before expiry",
+                "trigger": "SIP Expiry - 7 days",
+                "goal": "SIP Renewed",
+                "pre": "SIP data integrated"
+            },
+            {
+                "name": "Investment Nudge",
+                "channel": "Email, Web Message, App Push",
+                "desc": "Personalised investment recommendations based on portfolio",
+                "trigger": "Portfolio View",
+                "goal": "Investment Made",
+                "pre": "Portfolio API integrated"
+            }
+        ],
+        "events": [],
+        "payMode": "flat",
+        "payFlat": "600",
+        "currency": "USD",
+        "emailExtra": {
+            "integration": "",
+            "integrationOther": "",
+            "msgSizeKB": "",
+            "hosting": "",
+            "webhooks": "",
+            "ipPool": "",
+            "domains": "",
+            "domainPurposes": "",
+            "googleDomainRep": "",
+            "esp": "",
+            "perf": {
+                "openRate": "",
+                "clickRate": "",
+                "bounceRate": "",
+                "unsubRate": "",
+                "spamRate": ""
+            },
+            "subProcess": "",
+            "listOverall": "",
+            "listActive": "",
+            "maxVolume": "",
+            "currentIssues": "",
+            "topIsps": ""
+        },
+        "pay1": "",
+        "pay2": "",
+        "pay3": "",
+        "billingDate": "",
+        "billingNote": "",
+        "step": 4,
+        "chSet": [
+            "email",
+            "whatsapp"
+        ],
+        "appSet": [
+            "react-native"
+        ],
+        "pxSet": [],
+        "projectPlan": null
+    }
+}

@@ -1,0 +1,152 @@
+{
+    "id": "NC-8R4A",
+    "clientName": "HRX Fragrances",
+    "vertical": "ecommerce",
+    "step": 1,
+    "filledBy": "Rimjhim Tiwari",
+    "updatedAt": "2026-05-18T17:06:16+05:30",
+    "data": {
+        "clientName": "HRX Fragrances",
+        "vertical": "ecommerce",
+        "region": "Domestic - West",
+        "website": "https:\/\/hrxfragrances.com\/",
+        "primaryKey": "Customer ID",
+        "clientContact": {
+            "name": "Naina ",
+            "email": "nnohal@thepcacompanies.com",
+            "phone": "8107734148"
+        },
+        "startDate": "",
+        "am": "Parth Gosalia",
+        "amEmail": "parth.gosalia@netcorecloud.com",
+        "pss": "Amey Vaidya",
+        "pssEmail": "amey.vaidya@netcorecloud.com",
+        "dm": "",
+        "dmEmail": "",
+        "ds": "",
+        "dsEmail": "",
+        "productCombo": "ce-web",
+        "products": [
+            "ce"
+        ],
+        "webEnabled": true,
+        "appEnabled": false,
+        "webType": "shopify",
+        "webPlatform": "shopify",
+        "shopifyType": "",
+        "magentoVersion": "",
+        "iosMech": "swift",
+        "appSdkType": "native",
+        "webPushEnabled": false,
+        "webPushCreds": [],
+        "appPushEnabled": false,
+        "appPushCreds": [],
+        "appFeatures": [],
+        "smsSenderId": "",
+        "dataIngest": "CSV upload",
+        "apps": [],
+        "pxFeats": [],
+        "appsLive": "yes",
+        "fcmStatus": "yes",
+        "stagingApp": "yes",
+        "datalayer": "yes",
+        "channels": [
+            "email",
+            "whatsapp"
+        ],
+        "emailWarmup": true,
+        "waType": "fresh",
+        "useCases": [
+            {
+                "name": "Cart Abandonment Journey",
+                "channel": "Email, WhatsApp, Web Push, Web Message",
+                "desc": "Retarget on channels-> Purchase msg--> 30 Min --> Email\/ WhatsApp ....will be confirmed later\n",
+                "trigger": "NA",
+                "goal": "NA",
+                "pre": "Standard event nomenclature, since they are based on Shopify."
+            },
+            {
+                "name": "Convert Anonymous User into Identified",
+                "channel": "Web Message",
+                "desc": "User Lands on the website show a web message - Email\/Mobile-- Discount code (will be decided by team)",
+                "trigger": "NA",
+                "goal": "NA",
+                "pre": "Standard event nomenclature, since they are based on Shopify"
+            },
+            {
+                "name": " Welcome Journey on Signup\/Register and Subscribe",
+                "channel": "Email, WhatsApp, Web Push, Web Message",
+                "desc": "Use all channels ",
+                "trigger": "NA",
+                "goal": "NA",
+                "pre": "Standard event nomenclature, since they are based on Shopify"
+            },
+            {
+                "name": "Upsell\/re-selling deodrants",
+                "channel": "Email, WhatsApp, Web Push, Web Message",
+                "desc": "User buying ",
+                "trigger": "NA",
+                "goal": "NA",
+                "pre": "parfume 100ml > \nmini parfume > \nDeo >\n\nuser buying parfumer > upsell them deo  and visa versa ....."
+            },
+            {
+                "name": "Price change use case",
+                "channel": "Email, WhatsApp",
+                "desc": "Email\/ WhatsApp communication for Price drop on any product added to the cart but not purchased in 45 days ",
+                "trigger": "NA",
+                "goal": "NA",
+                "pre": ""
+            },
+            {
+                "name": "Browse Abandonment",
+                "channel": "Email, WhatsApp, Web Push",
+                "desc": "When customer abandon from browsing the product, send me messages on channels for identified users and for anon users re-target on Web push and Web message",
+                "trigger": "NA",
+                "goal": "NA",
+                "pre": "Standard event nomenclature, since they are based on Shopify"
+            }
+        ],
+        "events": [],
+        "payMode": "flat",
+        "payFlat": "100000",
+        "currency": "INR",
+        "emailExtra": {
+            "integration": "",
+            "integrationOther": "",
+            "msgSizeKB": "",
+            "hosting": "",
+            "webhooks": "",
+            "ipPool": "",
+            "domains": "",
+            "domainPurposes": "",
+            "googleDomainRep": "",
+            "esp": "",
+            "perf": {
+                "openRate": "",
+                "clickRate": "",
+                "bounceRate": "",
+                "unsubRate": "",
+                "spamRate": ""
+            },
+            "subProcess": "",
+            "listOverall": "",
+            "listActive": "",
+            "maxVolume": "",
+            "currentIssues": "",
+            "topIsps": ""
+        },
+        "pay1": "",
+        "pay2": "",
+        "pay3": "",
+        "billingDate": "",
+        "billingNote": "Billing will commence on go-lives",
+        "step": 1,
+        "chSet": [
+            "email",
+            "whatsapp"
+        ],
+        "appSet": [],
+        "pxSet": [],
+        "projectPlan": null
+    }
+}

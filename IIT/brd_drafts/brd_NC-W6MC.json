@@ -1,0 +1,751 @@
+{
+    "id": "NC-W6MC",
+    "clientName": "Multipl",
+    "vertical": "fintech",
+    "step": 4,
+    "filledBy": "Aishwarya",
+    "updatedAt": "2026-05-20T12:44:44+05:30",
+    "data": {
+        "clientName": "Multipl",
+        "vertical": "fintech",
+        "region": "Domestic - South",
+        "website": "https:\/\/multipl.in\/",
+        "primaryKey": "Customer ID",
+        "clientContact": {
+            "name": "Nishi Mallika",
+            "email": "nishi@multipl.xyz",
+            "phone": "7987694756"
+        },
+        "startDate": "2026-05-11",
+        "am": "",
+        "amEmail": "",
+        "pss": "",
+        "pssEmail": "",
+        "dm": "",
+        "dmEmail": "",
+        "ds": "",
+        "dsEmail": "",
+        "productCombo": "ce-px-app",
+        "products": [
+            "ce",
+            "px"
+        ],
+        "webEnabled": false,
+        "appEnabled": true,
+        "webType": "gtm",
+        "webPlatform": "native",
+        "shopifyType": "",
+        "magentoVersion": "",
+        "iosMech": "swift",
+        "appSdkType": "native",
+        "webPushEnabled": false,
+        "webPushCreds": [],
+        "appPushEnabled": false,
+        "appPushCreds": [],
+        "appFeatures": [],
+        "smsSenderId": "",
+        "dataIngest": "API integration",
+        "apps": [
+            "native"
+        ],
+        "pxFeats": [],
+        "appsLive": "yes",
+        "fcmStatus": "yes",
+        "stagingApp": "yes",
+        "datalayer": "yes",
+        "channels": [
+            "email",
+            "sms",
+            "whatsapp",
+            "rcs"
+        ],
+        "emailWarmup": true,
+        "waType": "migration",
+        "useCases": [
+            {
+                "name": "Onboarding",
+                "channel": "WhatsApp, App Push",
+                "desc": "Activation+Educational Flow: post sign-up D0-D15 engagement via Whatsapp and Push notifications untill first investment is submitted by user",
+                "trigger": "User downloads the app > sign up completed > : onboarding_completed",
+                "goal": "NA",
+                "pre": ""
+            },
+            {
+                "name": "Payment Failed",
+                "channel": "WhatsApp, App Push",
+                "desc": "Informational+motivational flow: Payment failed either because of failure or voluntarily, payment reminders for 5 days, combination of whatsapp and push notifications",
+                "trigger": "User started first investment flow> drops at payment page: payment_failed",
+                "goal": "NA",
+                "pre": ""
+            },
+            {
+                "name": "Payment Success",
+                "channel": "WhatsApp, App Push",
+                "desc": "Informational flow: User started with first investment, we inform the users about what happens in first few days of investment till his money is ready for brand spending; combination of whatsapp and push notifications",
+                "trigger": "sa_payment_success",
+                "goal": "NA",
+                "pre": ""
+            },
+            {
+                "name": "Brand Redemption",
+                "channel": "WhatsApp, App Push",
+                "desc": "Promotional flow: First investment is matured for voucher generation",
+                "trigger": "First investment and no voucher generated",
+                "goal": "NA",
+                "pre": ""
+            },
+            {
+                "name": "Top up ",
+                "channel": "WhatsApp, App Push",
+                "desc": "Re-engagement: time to top up users investment with next payment",
+                "trigger": "First investment and brand redemption completed",
+                "goal": "NA",
+                "pre": ""
+            }
+        ],
+        "events": [
+            {
+                "name": "user_phone_no_entered",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "date",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "user_login_otp_triggered",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "user_phone_no_verified",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "user_created",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "date",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "email_otp_triggered",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "email_verified",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "onboarding_redirect",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "home_viewed",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "landing screen viewed",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "SA_home_activate_clicked",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "SA_home_brandIcons_clicked",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "SA_landingpage_faq_icon_clicked",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "SA_landingpage_activateaccount_clicked",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "SA_addmoney_custom_amount_entered",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "SA_addmoney_amount_chip_selected",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "amount selected",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "SA_completeprofile_clicked",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "SA_investor_profile_bottomsheet_clicked",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "SA_profilecompletion_bottomsheet_opened",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "SA_addmoney_cta_clicked",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "SA_draft_created",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "SA_fund_confirmation_cta_clicked",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "SA_AddMoney_MF_OTP_CTA_Clicked",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "SA_Goal_Creation_Success",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "SA_AddMoney_Payment_Button_Clicked",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "SA_payment_status",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "status: failed\/pending\/success",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "SA_home_addmoney_clicked",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "SA_home_GC_button_clicked",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "SA_home_withdraw_button_clicked",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "SA_home_transactions_button_clicked",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "2FA_otp_triggered",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "goal creation successful",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "category",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "goal_payment_status",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "status: success\/failed\/pending",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "create_goal_viewed",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "category",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "brand_category_selected",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "brand_card_clicked",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "brand_section_scrolled",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "see_all_brands_clicked",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "brand_search_query_submitted",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "brand_search_no_results",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "brand_search_result_selected",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "brand_suggest_clicked",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "brand_suggest_submitted",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "brand_denomination_incremented",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "brand_denomination_decremented",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "brand_manual_entry_used",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "brand_coupon_applied",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "brand_coupon_removed",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "brand_coupon_apply_failed",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "brand_coupon_searched",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "brand_bottomsheet_closed",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "brand_back_pressed",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "brand_flow_abandoned",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "brand_load_error",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "brand_retry_clicked",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "brand_faq_clicked",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "brand_terms_expanded",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "SA_Simulator_EntryCTA_clicked",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "SA_Simulator_Questions_CTA_clicked",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "SA_Simulator_Questions_not_filled",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "SA_simulator_completed",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "SA_simulator_stop_loss_cta_clicked",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "referral_screen_viewed",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "referral_send_gift_on_whatsapp_clicked",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "referral_widget_clicked",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "invite_code_copied",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "profile_started",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "type: RIA\/ARN",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "profile_KYC fetched",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "type: RIA\/ARN",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "profile_KYC_status",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "type: RIA\/ARN",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "profile_kycaccount_created",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "type: RIA\/ARN",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "proifle_investor_account created",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "type: RIA\/ARN",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "profile_nominee_started",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "type: RIA\/ARN",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "profile_nominee_completed",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "type: RIA\/ARN",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "profile_risk_started",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "type: RIA\/ARN",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "profile_risk_completed",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "type: RIA\/ARN",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "bell_icon_clicked",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "notification_clicked",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "title",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "bottom_sheet_cta_clicked",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "title",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "bottom sheet closed",
+                "payloads": [],
+                "attributes": []
+            },
+            {
+                "name": "notification_sent_andriod",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "campaign name",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "notification_sent_ios",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "campaign name",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "notification_clicked_andoid",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "campaign name",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "notification_clicked_ios",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "campaign name",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "Whatsapp_triggered_ios",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "campaign name",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "Whatsapp_triggered_android",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "campaign name",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "email_sent",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "campaign name",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "email_opened",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "campaign name",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "email_clicked",
+                "payloads": [],
+                "attributes": [
+                    {
+                        "a": "campaign name",
+                        "dt": "",
+                        "desc": ""
+                    }
+                ]
+            }
+        ],
+        "payMode": "flat",
+        "payFlat": "105000",
+        "currency": "INR",
+        "emailExtra": {
+            "integration": "",
+            "integrationOther": "",
+            "msgSizeKB": "",
+            "hosting": "",
+            "webhooks": "",
+            "ipPool": "",
+            "domains": "",
+            "domainPurposes": "",
+            "googleDomainRep": "",
+            "esp": "",
+            "perf": {
+                "openRate": "",
+                "clickRate": "",
+                "bounceRate": "",
+                "unsubRate": "",
+                "spamRate": ""
+            },
+            "subProcess": "",
+            "listOverall": "",
+            "listActive": "",
+            "maxVolume": "",
+            "currentIssues": "",
+            "topIsps": ""
+        },
+        "pay1": "",
+        "pay2": "",
+        "pay3": "",
+        "billingDate": "2026-07-11",
+        "billingNote": "75,000 for the first 6 months and 1,05,000 for the remaining six months",
+        "step": 4,
+        "chSet": [
+            "email",
+            "sms",
+            "whatsapp",
+            "rcs"
+        ],
+        "appSet": [
+            "native"
+        ],
+        "pxSet": [],
+        "projectPlan": null
+    }
+}

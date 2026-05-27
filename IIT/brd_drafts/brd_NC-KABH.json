@@ -1,0 +1,134 @@
+{
+    "id": "NC-KABH",
+    "clientName": "MyCareerNet",
+    "vertical": "other",
+    "step": 3,
+    "filledBy": "Anonymous",
+    "updatedAt": "2026-04-28T21:06:38+05:30",
+    "data": {
+        "clientName": "MyCareerNet",
+        "vertical": "other",
+        "website": "https:\/\/mycareernet.co\/",
+        "primaryKey": "Customer ID",
+        "clientContact": {
+            "name": "Himanshu Joshi",
+            "email": "himanshu.joshi@careernet.in",
+            "phone": "+91 9742312806"
+        },
+        "startDate": "2026-04-23",
+        "am": "Harshit Puranik",
+        "amEmail": "harshit.puranik@netcorecloud.com",
+        "pss": "Ameya Vaidya",
+        "pssEmail": "amey.vaidya@netcorecloud.com",
+        "dm": "Shipra Choudhary",
+        "dmEmail": "shipra.choudhary@netcorecloud.com",
+        "ds": "Mandovi Joseph",
+        "dsEmail": "mandovi.joseph@netcorecloud.com",
+        "productCombo": "ce-web",
+        "products": [
+            "ce"
+        ],
+        "webEnabled": true,
+        "appEnabled": false,
+        "webType": "direct-js",
+        "webPlatform": "native",
+        "shopifyType": "",
+        "magentoVersion": "",
+        "iosMech": "swift",
+        "appSdkType": "native",
+        "webPushEnabled": false,
+        "webPushCreds": [],
+        "appPushEnabled": false,
+        "appPushCreds": [],
+        "appFeatures": [],
+        "smsSenderId": "",
+        "dataIngest": "API integration",
+        "apps": [],
+        "pxFeats": [],
+        "appsLive": "",
+        "fcmStatus": "",
+        "stagingApp": "",
+        "datalayer": "",
+        "channels": [
+            "email",
+            "whatsapp",
+            "rcs"
+        ],
+        "emailWarmup": false,
+        "waType": "migration",
+        "useCases": [
+            {
+                "name": "J1: Signup started but didn't complete profile ",
+                "channel": "Email, WhatsApp, RCS, Web Push",
+                "desc": "User has completed sign up but did not complete the profile, send multiple reminders via Email, Whatsapp, RCS at intervals  of 15 mins, 24 hours, 72 hours and 7 days. ",
+                "trigger": "signup_completed",
+                "goal": "profile_completed",
+                "pre": "JS Integration for the website to be completed.\nEmail, Web Push ,Whatsapp templates\/creatives to be shared by the mycareernet  team so it can be configured on the journeys.\nDNS configuration to be successfully completed by the mycareernet  team to activate emails."
+            },
+            {
+                "name": "J2: Signup complete but profile_completion < 75%",
+                "channel": "Email, WhatsApp, RCS, Web Push",
+                "desc": "User has completed sign up but did not complete 75% profile, send multiple reminders via Email, Whatsapp, RCS at intervals  of24 hours, 4 days ,8 days. ",
+                "trigger": "signup_completed",
+                "goal": "profile_completed",
+                "pre": "Profile completion % should be passed to CE as a attribute or event\nJS Integration for the website to be completed.\nEmail, Web Push ,Whatsapp templates\/creatives to be shared by the mycareernet  team so it can be configured on the journeys.\nDNS configuration to be successfully completed by the mycareernet  team to activate emails."
+            },
+            {
+                "name": "J3:  Profile_completion =100% but next action not taken",
+                "channel": "Email, WhatsApp, RCS, Web Push",
+                "desc": "User has completed updating the profile but has not registered for an event,job, course or started a mock test file, send multiple reminders via Email, Whatsapp, RCS at intervals  of 24 hours, 4 days ,8 days. ",
+                "trigger": "profile_completed",
+                "goal": "job_registration,event_registration,contest_regitration,mocktest_start",
+                "pre": "Profile completion % should be passed to CE as a attribute or event\nJS Integration for the website to be completed.\nEmail, Web Push ,Whatsapp templates\/creatives to be shared by the mycareernet  team so it can be configured on the journeys.\nDNS configuration to be successfully completed by the mycareernet  team to activate emails."
+            },
+            {
+                "name": "J4: Practice Mock Page Viewed but Not Started",
+                "channel": "Email, WhatsApp, RCS, Web Push",
+                "desc": "User has clicked on 'view details' but did not start the test, send multiple reminders via Email, Whatsapp at intervals  of 30 mins, 24 hours, 3 days. ",
+                "trigger": "mock_view_details",
+                "goal": "mock_test_started",
+                "pre": "JS Integration for the website to be completed.\nEmail, Web Push ,Whatsapp templates\/creatives to be shared by the mycareernet  team so it can be configured on the journeys.\nDNS configuration to be successfully completed by the mycareernet  team to activate emails."
+            },
+            {
+                "name": "J5: Practice Mock started but din't complete",
+                "channel": "Email, WhatsApp, RCS, Web Push",
+                "desc": "User has clicked on 'view details' but did not complete the test, send multiple reminders via Email, Whatsapp at intervals  of 30 mins, 24 hours, 3 days. ",
+                "trigger": "mock_test_started",
+                "goal": "mock_test_completed",
+                "pre": "JS Integration for the website to be completed.\nEmail, Web Push ,Whatsapp templates\/creatives to be shared by the mycareernet  team so it can be configured on the journeys.\nDNS configuration to be successfully completed by the mycareernet  team to activate emails."
+            },
+            {
+                "name": "J6: Contest User Journey ",
+                "channel": "Email, WhatsApp, RCS, Web Push",
+                "desc": "User has  clicked on Register contest but has not completed the form filling step to complete the registration. Send multiple reminders via Email, Whatsapp, Push at intervals  of 8 hours, 24 hours, 3 days. ",
+                "trigger": "contest_register_clicked",
+                "goal": "contest_register_completed",
+                "pre": "JS Integration for the website to be completed.\nEmail, Web Push ,Whatsapp templates\/creatives to be shared by the mycareernet  team so it can be configured on the journeys.\nDNS configuration to be successfully completed by the mycareernet  team to activate emails."
+            },
+            {
+                "name": "J7: Jobs Registration Drop Off ",
+                "channel": "Email, WhatsApp, RCS, Web Push",
+                "desc": "If a user has viewed the job but has not applied for it, send multiple reminders via Email, Whatsapp, Push at intervals  of 8 hours, 24 hours, 3 days. ",
+                "trigger": "job_viewed",
+                "goal": "job_registration_completed",
+                "pre": "JS Integration for the website to be completed.\nEmail, Web Push ,Whatsapp templates\/creatives to be shared by the mycareernet  team so it can be configured on the journeys.\nDNS configuration to be successfully completed by the mycareernet  team to activate emails."
+            }
+        ],
+        "events": [],
+        "payMode": "flat",
+        "payFlat": "70000",
+        "pay1": "",
+        "pay2": "",
+        "pay3": "",
+        "billingDate": "2026-05-01",
+        "billingNote": "70k - for 6 months then 95k - for last 6 months\t\t\t\t",
+        "step": 3,
+        "chSet": [
+            "email",
+            "whatsapp",
+            "rcs"
+        ],
+        "appSet": [],
+        "pxSet": []
+    }
+}

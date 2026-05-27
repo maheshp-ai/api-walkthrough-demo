@@ -1,0 +1,105 @@
+{
+    "id": "NC-8E2X",
+    "clientName": "Tone wow",
+    "vertical": "telecom",
+    "step": 4,
+    "filledBy": "Anonymous",
+    "updatedAt": "2026-04-28T12:00:15+05:30",
+    "data": {
+        "clientName": "Tone wow",
+        "vertical": "telecom",
+        "website": "https:\/\/www.tonewow.com\/",
+        "primaryKey": "Customer ID",
+        "clientContact": {
+            "name": " Syaza Syed",
+            "email": "syaza@tonewow.net",
+            "phone": "+60 117070 0000"
+        },
+        "startDate": "2026-04-27",
+        "am": "Shashankth",
+        "amEmail": "shashankh.bhatt@netcorecloud.com",
+        "pss": "Amartya",
+        "pssEmail": "amartya.singh@netcorecloud.com",
+        "dm": "Ashok",
+        "dmEmail": "ashok.vichare@netcorecloud.com",
+        "ds": "Neeraj",
+        "dsEmail": "neeraj.pallathu@netcorecloud.com",
+        "productCombo": "ce-px-web-app",
+        "products": [
+            "ce",
+            "px"
+        ],
+        "webEnabled": true,
+        "appEnabled": true,
+        "webType": "gtm",
+        "webPlatform": "native",
+        "shopifyType": "",
+        "magentoVersion": "",
+        "iosMech": "swift",
+        "appSdkType": "flutter",
+        "webPushEnabled": false,
+        "webPushCreds": [],
+        "appPushEnabled": false,
+        "appPushCreds": [],
+        "appFeatures": [],
+        "smsSenderId": "",
+        "dataIngest": "API integration, CSV upload",
+        "apps": [
+            "flutter"
+        ],
+        "pxFeats": [],
+        "appsLive": "",
+        "fcmStatus": "",
+        "stagingApp": "",
+        "datalayer": "",
+        "channels": [
+            "email",
+            "sms"
+        ],
+        "emailWarmup": true,
+        "waType": "migration",
+        "useCases": [
+            {
+                "name": "New App migration",
+                "channel": "App Push",
+                "desc": "When users open the old app, an in-app pop-up prompts them to migrate to the new app. Additionally, weekly push notifications are sent on the old app encouraging users to switch to the new version.",
+                "trigger": "login_event",
+                "goal": "transaction_success",
+                "pre": "App Integration to be completed successfully\nTemplates\/creatives must be shared to team"
+            },
+            {
+                "name": "Usage  expiry",
+                "channel": "App Push",
+                "desc": "A reminder push notification is sent when a user’s data usage is about to be exhausted or expires.",
+                "trigger": "usage_limit_near",
+                "goal": "transaction_success",
+                "pre": "App Integration to be completed successfully\nTemplates\/creatives must be shared to team\nAPI integration completed"
+            },
+            {
+                "name": "Inactive user",
+                "channel": "App Push",
+                "desc": "Sending weekly\/monthly APN to the user who has not done app launch in last 30 days",
+                "trigger": "Segment",
+                "goal": "transaction_success",
+                "pre": "App Integration to be completed successfully\nTemplates\/creatives must be shared to team"
+            }
+        ],
+        "events": [],
+        "payMode": "flat",
+        "payFlat": "620500",
+        "pay1": "",
+        "pay2": "",
+        "pay3": "",
+        "billingDate": "2026-05-30",
+        "billingNote": "",
+        "step": 4,
+        "chSet": [
+            "email",
+            "sms"
+        ],
+        "appSet": [
+            "flutter"
+        ],
+        "pxSet": []
+    }
+}

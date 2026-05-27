@@ -1,0 +1,123 @@
+{
+    "id": "NC-JCG9",
+    "clientName": "Permata Bank",
+    "vertical": "bfsi",
+    "step": 4,
+    "filledBy": "Sachneet",
+    "updatedAt": "2026-05-22T18:55:36+05:30",
+    "data": {
+        "clientName": "Permata Bank",
+        "vertical": "bfsi",
+        "region": "Indonesia",
+        "website": "https:\/\/www.permatabank.co.id",
+        "websites": [
+            "https:\/\/www.permatabank.co.id"
+        ],
+        "primaryKey": "EMAIL ID",
+        "accountType": "MRR",
+        "pocCriteria": "",
+        "panels": [
+            {
+                "name": "Permata Bank",
+                "pk": "EMAIL ID",
+                "notes": ""
+            }
+        ],
+        "clientContact": {
+            "name": "Pratiwi Mayasari",
+            "email": "pratiwi.mayasari@permatabank.co.id",
+            "phone": "+6285772222499"
+        },
+        "startDate": "2026-05-12",
+        "am": "Nur Anissa",
+        "amEmail": "nur.noviana@netcorecloud.com",
+        "pss": "",
+        "pssEmail": "",
+        "dm": "",
+        "dmEmail": "",
+        "ds": "",
+        "dsEmail": "",
+        "productCombo": "ce-web",
+        "products": [
+            "ce"
+        ],
+        "webEnabled": false,
+        "appEnabled": false,
+        "webType": "direct-js",
+        "webPlatform": "native",
+        "shopifyType": "",
+        "magentoVersion": "",
+        "iosMech": "swift",
+        "appSdkType": "native",
+        "webPushEnabled": false,
+        "webPushCreds": [],
+        "appPushEnabled": false,
+        "appPushCreds": [],
+        "appFeatures": [],
+        "smsSenderId": "",
+        "dataIngest": "API integration",
+        "dataIngestNotes": "",
+        "apps": [],
+        "pxFeats": [],
+        "appsLive": "",
+        "fcmStatus": "",
+        "stagingApp": "",
+        "datalayer": "",
+        "channels": [
+            "email"
+        ],
+        "emailWarmup": true,
+        "waType": "migration",
+        "useCases": [
+            {
+                "name": "",
+                "channel": "Email",
+                "desc": "",
+                "trigger": "NA",
+                "goal": "NA",
+                "pre": ""
+            }
+        ],
+        "events": [],
+        "payMode": "flat",
+        "payFlat": "2857",
+        "currency": "USD",
+        "emailExtra": {
+            "integration": "",
+            "integrationOther": "",
+            "msgSizeKB": "",
+            "hosting": "",
+            "webhooks": "",
+            "ipPool": "",
+            "domains": "",
+            "domainPurposes": "",
+            "googleDomainRep": "",
+            "esp": "",
+            "perf": {
+                "openRate": "",
+                "clickRate": "",
+                "bounceRate": "",
+                "unsubRate": "",
+                "spamRate": ""
+            },
+            "subProcess": "",
+            "listOverall": "",
+            "listActive": "",
+            "maxVolume": "",
+            "currentIssues": "",
+            "topIsps": ""
+        },
+        "pay1": "",
+        "pay2": "",
+        "pay3": "",
+        "billingDate": "2026-06-26",
+        "billingNote": "Billing will start as soon as onboarding finishes. (Topline with Rp.17.500)",
+        "step": 4,
+        "chSet": [
+            "email"
+        ],
+        "appSet": [],
+        "pxSet": [],
+        "projectPlan": null
+    }
+}

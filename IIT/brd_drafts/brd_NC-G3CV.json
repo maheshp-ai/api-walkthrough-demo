@@ -1,0 +1,665 @@
+{
+    "id": "NC-G3CV",
+    "clientName": "Mailkeeper",
+    "vertical": "other",
+    "step": 4,
+    "filledBy": "KOmal",
+    "updatedAt": "2026-05-22T14:58:27+05:30",
+    "data": {
+        "clientName": "Mailkeeper",
+        "vertical": "other",
+        "region": "Europe",
+        "website": "https:\/\/mailkeeper.app\/",
+        "websites": [
+            "https:\/\/mailkeeper.app\/"
+        ],
+        "primaryKey": "",
+        "accountType": "POC",
+        "pocCriteria": "90 Day POC with Exit Clause",
+        "panels": [],
+        "clientContact": {
+            "name": "Evgeniy Seryi",
+            "email": "evgeniy.seryi@mailkeeper.app",
+            "phone": ""
+        },
+        "startDate": "2026-05-26",
+        "am": "Pier Trio",
+        "amEmail": "pierfrancesco.trio@netcorecloud.com",
+        "pss": "Anoop Teja",
+        "pssEmail": "anoop.teja@netcorecloud.com",
+        "dm": "Komal Sharma",
+        "dmEmail": "komal.sharma@netcorecloud.com",
+        "ds": "Komal Sharma",
+        "dsEmail": "komal.sharma@netcorecloud.com",
+        "productCombo": "email-cpaas",
+        "products": [
+            "cpaas"
+        ],
+        "webEnabled": false,
+        "appEnabled": false,
+        "webType": "gtm",
+        "webPlatform": "native",
+        "shopifyType": "",
+        "magentoVersion": "",
+        "iosMech": "swift",
+        "appSdkType": "native",
+        "webPushEnabled": false,
+        "webPushCreds": [],
+        "appPushEnabled": false,
+        "appPushCreds": [],
+        "appFeatures": [],
+        "smsSenderId": "",
+        "dataIngest": "SFTP, Amazon S3",
+        "dataIngestNotes": "",
+        "apps": [],
+        "pxFeats": [],
+        "appsLive": "",
+        "fcmStatus": "",
+        "stagingApp": "",
+        "datalayer": "",
+        "channels": [
+            "email",
+            "sms"
+        ],
+        "emailWarmup": false,
+        "waType": "migration",
+        "useCases": [
+            {
+                "name": "",
+                "channel": "Email",
+                "desc": "",
+                "trigger": "NA",
+                "goal": "NA",
+                "pre": ""
+            }
+        ],
+        "events": [],
+        "payMode": "flat",
+        "payFlat": "8000",
+        "currency": "EUR",
+        "emailExtra": {
+            "integration": "SMTP",
+            "integrationOther": "",
+            "msgSizeKB": "33",
+            "hosting": "Google Cloud Platform - EU - Netherlands",
+            "webhooks": "No",
+            "ipPool": "No",
+            "domains": "spdate.com, jucydate.com, wethunt.com ",
+            "domainPurposes": "transactional\/triggered",
+            "googleDomainRep": "Will provide",
+            "esp": "Mailkeeper",
+            "perf": {
+                "openRate": "\"Activation - 22.09% Total - 19.14%\"",
+                "clickRate": "\"Activation 9.55% Total - 4.83%\"",
+                "bounceRate": "0.0033%",
+                "unsubRate": "0.91%",
+                "spamRate": "0.42%"
+            },
+            "subProcess": "Online only — web signup form, landing pages, affiliate\/partner traffic. All sources use double opt-in with stored consent metadata.",
+            "listOverall": "~6m",
+            "listActive": "~50k",
+            "maxVolume": "~700k per day and ~21M per month",
+            "currentIssues": "Yes, our main issue is the lack of stability in activation and confirm-rate metrics. \nPerformance fluctuates significantly day-to-day with no clear pattern or correlation to our sending behavior, making it hard to forecast revenue or diagnose root causes. ",
+            "topIsps": "Gmail          82.0%\nMicrosoft     6.7%\niCloud         5.8%\nYahoo         4.1%\nAOL            1.2%"
+        },
+        "pay1": "",
+        "pay2": "",
+        "pay3": "",
+        "billingDate": "2026-08-26",
+        "billingNote": "90 Day POC with Exit Clause",
+        "step": 4,
+        "chSet": [
+            "email",
+            "sms"
+        ],
+        "appSet": [],
+        "pxSet": [],
+        "projectPlan": {
+            "v": 1,
+            "taskData": [
+                {
+                    "sno": "1",
+                    "title": "Pre Kick Off",
+                    "type": "phase",
+                    "ch": [],
+                    "s": 0,
+                    "d": 2,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "1.1",
+                    "title": "Sales Handover",
+                    "type": "task",
+                    "ch": [],
+                    "s": 0,
+                    "d": 1,
+                    "assignee": "NS"
+                },
+                {
+                    "sno": "1.2",
+                    "title": "BRD & PO",
+                    "type": "task",
+                    "ch": [],
+                    "s": 1,
+                    "d": 1,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "1.3",
+                    "title": "Internal Discovery",
+                    "type": "task",
+                    "ch": [],
+                    "s": 1,
+                    "d": 1,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "1.4",
+                    "title": "Assign Implementation Engineer",
+                    "type": "task",
+                    "ch": [],
+                    "s": 1,
+                    "d": 1,
+                    "assignee": "NO"
+                },
+                {
+                    "sno": "2",
+                    "title": "Client Kick Off & Discovery",
+                    "type": "phase",
+                    "ch": [],
+                    "s": 3,
+                    "d": 5,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "2.1",
+                    "title": "Primary Key Finalized",
+                    "type": "task",
+                    "ch": [],
+                    "s": 3,
+                    "d": 1,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "2.2",
+                    "title": "Use Case Discussion",
+                    "type": "task",
+                    "ch": [],
+                    "s": 3,
+                    "d": 2,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "2.3",
+                    "title": "Tech Feasibility Discussion",
+                    "type": "task",
+                    "ch": [],
+                    "s": 3,
+                    "d": 2,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "2.4",
+                    "title": "Events & Attributes Discussion",
+                    "type": "task",
+                    "ch": [],
+                    "s": 3,
+                    "d": 2,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "2.5",
+                    "title": "Email Discovery",
+                    "type": "task",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 3,
+                    "d": 1,
+                    "assignee": "CM"
+                },
+                {
+                    "sno": "2.5.1",
+                    "title": "Domain Finalization",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 3,
+                    "d": 1,
+                    "assignee": "CM"
+                },
+                {
+                    "sno": "2.5.2",
+                    "title": "Data Clarity Discussion",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 3,
+                    "d": 1,
+                    "assignee": "CM"
+                },
+                {
+                    "sno": "2.6",
+                    "title": "SOW Internal Sign Off",
+                    "type": "task",
+                    "ch": [],
+                    "s": 5,
+                    "d": 1,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "2.7",
+                    "title": "SOW Client Sign Off",
+                    "type": "task",
+                    "ch": [],
+                    "s": 6,
+                    "d": 2,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "2.8",
+                    "title": "Panel Creation",
+                    "type": "task",
+                    "ch": [],
+                    "s": 6,
+                    "d": 1,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "2.9",
+                    "title": "MOM Client Discovery",
+                    "type": "task",
+                    "ch": [],
+                    "s": 7,
+                    "d": 1,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "3",
+                    "title": "Integration",
+                    "type": "phase",
+                    "ch": [],
+                    "s": 7,
+                    "d": 12,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "3.1",
+                    "title": "Implementation Engineer Intro & Assign",
+                    "type": "task",
+                    "ch": [],
+                    "s": 7,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "3.2",
+                    "title": "Email Implementation",
+                    "type": "task",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 7,
+                    "d": 10,
+                    "assignee": "NI"
+                },
+                {
+                    "sno": "3.2.1",
+                    "title": "DE Team Approval & Onboarding",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 7,
+                    "d": 3,
+                    "assignee": "NC"
+                },
+                {
+                    "sno": "3.2.2",
+                    "title": "DNS Record Sharing",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 10,
+                    "d": 1,
+                    "assignee": "NC"
+                },
+                {
+                    "sno": "3.2.3",
+                    "title": "DNS Record Implementation",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 11,
+                    "d": 2,
+                    "assignee": "NC"
+                },
+                {
+                    "sno": "3.2.4",
+                    "title": "DNS Verification by DE Team",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 13,
+                    "d": 2,
+                    "assignee": "NC"
+                },
+                {
+                    "sno": "3.2.5",
+                    "title": "Data Upload & Verification",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 15,
+                    "d": 2,
+                    "assignee": "NC"
+                },
+                {
+                    "sno": "3.2.6",
+                    "title": "Warm Up Plan Shared",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 17,
+                    "d": 1,
+                    "assignee": "NC"
+                },
+                {
+                    "sno": "3.2.7",
+                    "title": "AMP Domain Whitelist",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 18,
+                    "d": 1,
+                    "assignee": "NC"
+                },
+                {
+                    "sno": "3.2.8",
+                    "title": "AMP Template From Client",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 19,
+                    "d": 3,
+                    "assignee": "NC"
+                },
+                {
+                    "sno": "4",
+                    "title": "Product Configuration & Testing",
+                    "type": "phase",
+                    "ch": [],
+                    "s": 18,
+                    "d": 3,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "4.1",
+                    "title": "Email Setup & Review",
+                    "type": "task",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 18,
+                    "d": 4,
+                    "assignee": "NI"
+                },
+                {
+                    "sno": "4.1.1",
+                    "title": "Template Uploaded",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 18,
+                    "d": 3,
+                    "assignee": "NI"
+                },
+                {
+                    "sno": "4.1.2",
+                    "title": "Send Test Email to DE",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 21,
+                    "d": 1,
+                    "assignee": "NI"
+                },
+                {
+                    "sno": "4.2",
+                    "title": "Use Case Testing",
+                    "type": "task",
+                    "ch": [],
+                    "s": 21,
+                    "d": 3,
+                    "assignee": "NC"
+                },
+                {
+                    "sno": "4.2.1",
+                    "title": "Email Use Case Setup",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 21,
+                    "d": 1,
+                    "assignee": "NC"
+                },
+                {
+                    "sno": "4.3",
+                    "title": "Product Config & Testing Completed",
+                    "type": "task",
+                    "ch": [],
+                    "s": 20,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "5",
+                    "title": "Use Case Setup & User Training",
+                    "type": "phase",
+                    "ch": [],
+                    "s": 21,
+                    "d": 3,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "5.1",
+                    "title": "Template Creation",
+                    "type": "task",
+                    "ch": [],
+                    "s": 21,
+                    "d": 3,
+                    "assignee": "T"
+                },
+                {
+                    "sno": "5.2",
+                    "title": "Campaign Creation",
+                    "type": "task",
+                    "ch": [],
+                    "s": 24,
+                    "d": 1,
+                    "assignee": "T"
+                },
+                {
+                    "sno": "5.3",
+                    "title": "Journey Creation",
+                    "type": "task",
+                    "ch": [],
+                    "s": 25,
+                    "d": 1,
+                    "assignee": "T"
+                },
+                {
+                    "sno": "5.4",
+                    "title": "Dashboard Overview",
+                    "type": "task",
+                    "ch": [],
+                    "s": 22,
+                    "d": 1,
+                    "assignee": "T"
+                },
+                {
+                    "sno": "5.5",
+                    "title": "User Training Completed",
+                    "type": "task",
+                    "ch": [],
+                    "s": 23,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "6",
+                    "title": "Go Live",
+                    "type": "phase",
+                    "ch": [],
+                    "s": 24,
+                    "d": 15,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "6.1",
+                    "title": "Use Case Go Live",
+                    "type": "task",
+                    "ch": [],
+                    "s": 24,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "6.1.1",
+                    "title": "Email Go Live",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 24,
+                    "d": 1,
+                    "assignee": "T"
+                },
+                {
+                    "sno": "6.2",
+                    "title": "Internal Warmup",
+                    "type": "task",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 25,
+                    "d": 2,
+                    "assignee": "T"
+                },
+                {
+                    "sno": "6.3",
+                    "title": "Warmup Campaign Started",
+                    "type": "task",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 27,
+                    "d": 7,
+                    "assignee": "T"
+                },
+                {
+                    "sno": "6.4",
+                    "title": "Warmup Scale-Up & Completion",
+                    "type": "task",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 34,
+                    "d": 3,
+                    "assignee": "T"
+                },
+                {
+                    "sno": "6.5",
+                    "title": "Performance Review",
+                    "type": "task",
+                    "ch": [],
+                    "s": 33,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "6.6",
+                    "title": "Review & Feedback",
+                    "type": "task",
+                    "ch": [],
+                    "s": 38,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "7",
+                    "title": "Handover",
+                    "type": "phase",
+                    "ch": [],
+                    "s": 38,
+                    "d": 4,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "7.1",
+                    "title": "Handover Document",
+                    "type": "task",
+                    "ch": [],
+                    "s": 38,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "7.2",
+                    "title": "Handover Email Raised",
+                    "type": "task",
+                    "ch": [],
+                    "s": 38,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "7.3",
+                    "title": "Internal Handover Call",
+                    "type": "task",
+                    "ch": [],
+                    "s": 39,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "7.4",
+                    "title": "CSM Introduction Call",
+                    "type": "task",
+                    "ch": [],
+                    "s": 40,
+                    "d": 2,
+                    "assignee": "MB"
+                }
+            ],
+            "taskStatuses": [],
+            "baselines": [],
+            "currentPacing": "moderate",
+            "comments": null,
+            "form": {
+                "customer": "Mailkeeper",
+                "projname": "Mailkeeper — Onboarding",
+                "pm": "Anoop Teja",
+                "status": "Proposed",
+                "template": "email",
+                "start": "2026-05-25",
+                "end": "2026-07-02"
+            }
+        }
+    },
+    "atomId": "6a10224f23f13ff8d7a00976",
+    "atomProjectId": "mpgpz3ps55utv9",
+    "atomExportedAt": "2026-05-22T15:00:55+05:30"
+}

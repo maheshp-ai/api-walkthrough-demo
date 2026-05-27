@@ -1,0 +1,869 @@
+{
+    "id": "NC-6MEK",
+    "clientName": "Voltas",
+    "vertical": "ecommerce",
+    "step": 4,
+    "filledBy": "Anonymous",
+    "updatedAt": "2026-04-08T17:45:47+05:30",
+    "data": {
+        "clientName": "Voltas",
+        "vertical": "ecommerce",
+        "website": "https:\/\/www.voltas.com\/",
+        "primaryKey": "Mobile number",
+        "clientContact": {
+            "name": "Rahul",
+            "email": "rahul@gmail.com",
+            "phone": "9999955555"
+        },
+        "startDate": "2026-03-30",
+        "am": "Kunal Khatri",
+        "amEmail": "kunal.khatri@netcorecloud.com",
+        "pss": "Anushka Joshi",
+        "pssEmail": "anushka.joshi@netcorecloud.com",
+        "dm": "Faruq Kazi",
+        "dmEmail": "faruq.kazi@netcorecloud.com",
+        "ds": "",
+        "dsEmail": "",
+        "productCombo": "ce-web",
+        "products": [
+            "ce"
+        ],
+        "webEnabled": true,
+        "appEnabled": false,
+        "webType": "shopify",
+        "webPlatform": "shopify",
+        "shopifyType": "",
+        "magentoVersion": "",
+        "iosMech": "swift",
+        "appSdkType": "native",
+        "webPushEnabled": false,
+        "webPushCreds": [],
+        "appPushEnabled": false,
+        "appPushCreds": [],
+        "appFeatures": [],
+        "smsSenderId": "",
+        "dataIngest": "API integration, CDP integration",
+        "apps": [],
+        "pxFeats": [],
+        "appsLive": "yes",
+        "fcmStatus": "yes",
+        "stagingApp": "yes",
+        "datalayer": "yes",
+        "channels": [
+            "email",
+            "sms",
+            "whatsapp",
+            "webpush",
+            "apppush"
+        ],
+        "emailWarmup": true,
+        "waType": "migration",
+        "useCases": [
+            {
+                "name": "Cart Abandoned Journey",
+                "channel": "Email, SMS, WhatsApp",
+                "desc": "Re-engage users who added items to cart but did not complete purchase",
+                "trigger": "Add to Cart",
+                "goal": "Order Placed",
+                "pre": "GTM integration done\nChannels active\nTemplates created on Netcore"
+            },
+            {
+                "name": "Browse Abandonment",
+                "channel": "Email",
+                "desc": "Re-engage users who viewed products but did not add to cart",
+                "trigger": "Product View",
+                "goal": "Add to Cart",
+                "pre": "Web tracking live\nEmail channel active"
+            },
+            {
+                "name": "Post Purchase",
+                "channel": "Email, SMS",
+                "desc": "Send order confirmation, delivery updates and review requests",
+                "trigger": "Order Placed",
+                "goal": "Product Review",
+                "pre": "Order webhook integrated"
+            },
+            {
+                "name": "Winback Journey",
+                "channel": "Email, SMS",
+                "desc": "Re-engage lapsed customers with personalised offers",
+                "trigger": "Last Order > 60 days",
+                "goal": "Order Placed",
+                "pre": "Segment created\nTemplates ready"
+            }
+        ],
+        "events": [
+            {
+                "name": "Registration",
+                "payloads": [
+                    {
+                        "p": "source",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "web or app"
+                    },
+                    {
+                        "p": "method",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "how the event was performed. Social, email, phone, etc"
+                    }
+                ],
+                "attributes": [
+                    {
+                        "a": "EMAIL",
+                        "dt": "textline",
+                        "desc": ""
+                    },
+                    {
+                        "a": "MOBILE",
+                        "dt": "textline",
+                        "desc": ""
+                    },
+                    {
+                        "a": "FIRST_NAME",
+                        "dt": "textline",
+                        "desc": ""
+                    },
+                    {
+                        "a": "LAST_NAME",
+                        "dt": "textline",
+                        "desc": ""
+                    },
+                    {
+                        "a": "LOCATION",
+                        "dt": "textline",
+                        "desc": ""
+                    },
+                    {
+                        "a": "GENDER",
+                        "dt": "textline",
+                        "desc": ""
+                    },
+                    {
+                        "a": "DATE_OF_BIRTH",
+                        "dt": "date",
+                        "desc": ""
+                    },
+                    {
+                        "a": "PINCODE",
+                        "dt": "textline",
+                        "desc": ""
+                    },
+                    {
+                        "a": "CITY",
+                        "dt": "textline",
+                        "desc": ""
+                    },
+                    {
+                        "a": "LOYALTY_TIER",
+                        "dt": "textline",
+                        "desc": "If you support loyalty program"
+                    },
+                    {
+                        "a": "LOYALTY_SUBCRIPTION",
+                        "dt": "textline",
+                        "desc": "If you support loyalty program"
+                    }
+                ]
+            },
+            {
+                "name": "Sign in",
+                "payloads": [
+                    {
+                        "p": "source",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "web or app"
+                    },
+                    {
+                        "p": "method",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "how the event was performed. Social, email, phone, etc"
+                    }
+                ],
+                "attributes": [
+                    {
+                        "a": "LAST_LOGIN_SOURCE",
+                        "dt": "textline",
+                        "desc": "web or app"
+                    }
+                ]
+            },
+            {
+                "name": "Sign out",
+                "payloads": [
+                    {
+                        "p": "source",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "web or app"
+                    }
+                ],
+                "attributes": []
+            },
+            {
+                "name": "Screen load (app)",
+                "payloads": [
+                    {
+                        "p": "screen_name",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "Only for app on all the pages share the screen name (For PX and web message use case)"
+                    }
+                ],
+                "attributes": []
+            },
+            {
+                "name": "Screen load (web)",
+                "payloads": [
+                    {
+                        "p": "screen_name",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "Only used where user case is set else it will count on MAU"
+                    },
+                    {
+                        "p": "title",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": ""
+                    }
+                ],
+                "attributes": []
+            },
+            {
+                "name": "Product Search",
+                "payloads": [
+                    {
+                        "p": "keyword",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "Search keyword"
+                    }
+                ],
+                "attributes": []
+            },
+            {
+                "name": "Category Viewed",
+                "payloads": [
+                    {
+                        "p": "category_name",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "Category Name like mobile, laptop, electronics"
+                    }
+                ],
+                "attributes": []
+            },
+            {
+                "name": "Product View",
+                "payloads": [
+                    {
+                        "p": "prid",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "unique product id"
+                    },
+                    {
+                        "p": "image",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "Image link for product"
+                    },
+                    {
+                        "p": "prqt",
+                        "ap": "",
+                        "dt": "integer",
+                        "adt": "",
+                        "desc": "pass default 1"
+                    },
+                    {
+                        "p": "product_name",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "Name of the product"
+                    },
+                    {
+                        "p": "category",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "Category Name like mobile, laptop, electronics"
+                    },
+                    {
+                        "p": "brand",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "Brand of selected product"
+                    },
+                    {
+                        "p": "selling_price",
+                        "ap": "",
+                        "dt": "float",
+                        "adt": "",
+                        "desc": "cost of product"
+                    },
+                    {
+                        "p": "product_url",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "discounted_price",
+                        "ap": "",
+                        "dt": "float",
+                        "adt": "",
+                        "desc": "Cost after discount"
+                    },
+                    {
+                        "p": "stock_availability",
+                        "ap": "",
+                        "dt": "integer",
+                        "adt": "",
+                        "desc": "Flag for stock is available 1 or 0"
+                    }
+                ],
+                "attributes": []
+            },
+            {
+                "name": "Add to Wishlist",
+                "payloads": [
+                    {
+                        "p": "prid",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "unique product id"
+                    },
+                    {
+                        "p": "prqt",
+                        "ap": "",
+                        "dt": "integer",
+                        "adt": "",
+                        "desc": "quantity in number"
+                    },
+                    {
+                        "p": "image",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "Image link for product"
+                    },
+                    {
+                        "p": "product_name",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "Name of the product"
+                    },
+                    {
+                        "p": "category",
+                        "ap": "",
+                        "dt": "",
+                        "adt": "",
+                        "desc": "Category Name like mobile, laptop, electronics"
+                    },
+                    {
+                        "p": "brand",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "Brand of selected product"
+                    },
+                    {
+                        "p": "selling_price",
+                        "ap": "",
+                        "dt": "float",
+                        "adt": "",
+                        "desc": "cost of product"
+                    },
+                    {
+                        "p": "product_url",
+                        "ap": "",
+                        "dt": "",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "discounted_price",
+                        "ap": "",
+                        "dt": "float",
+                        "adt": "",
+                        "desc": "Cost after discount"
+                    },
+                    {
+                        "p": "stock_availability",
+                        "ap": "",
+                        "dt": "integer",
+                        "adt": "",
+                        "desc": "Flag for stock is available 1 or 0"
+                    }
+                ],
+                "attributes": []
+            },
+            {
+                "name": "Add to Cart",
+                "payloads": [
+                    {
+                        "p": "prid",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "unique product id"
+                    },
+                    {
+                        "p": "prqt",
+                        "ap": "",
+                        "dt": "integer",
+                        "adt": "",
+                        "desc": "quantity in number"
+                    },
+                    {
+                        "p": "image",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "Image link for product"
+                    },
+                    {
+                        "p": "product_name",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "Name of the product"
+                    },
+                    {
+                        "p": "category",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "Category Name like mobile, laptop, electronics"
+                    },
+                    {
+                        "p": "brand",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "Brand of selected product"
+                    },
+                    {
+                        "p": "selling_price",
+                        "ap": "",
+                        "dt": "float",
+                        "adt": "",
+                        "desc": "cost of product"
+                    },
+                    {
+                        "p": "product_url",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "discounted_price",
+                        "ap": "",
+                        "dt": "float",
+                        "adt": "",
+                        "desc": "Cost after discount"
+                    },
+                    {
+                        "p": "stock_availability",
+                        "ap": "",
+                        "dt": "integer",
+                        "adt": "",
+                        "desc": "Flag for stock is available 1 or 0"
+                    }
+                ],
+                "attributes": []
+            },
+            {
+                "name": "Remove from Cart",
+                "payloads": [
+                    {
+                        "p": "prid",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "unique product id"
+                    },
+                    {
+                        "p": "prqt",
+                        "ap": "",
+                        "dt": "integer",
+                        "adt": "",
+                        "desc": "quantity in number"
+                    },
+                    {
+                        "p": "image",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "Image link for product"
+                    },
+                    {
+                        "p": "product_name",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "Name of the product"
+                    },
+                    {
+                        "p": "category",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "Category Name like mobile, laptop, electronics"
+                    },
+                    {
+                        "p": "brand",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "Brand of selected product"
+                    },
+                    {
+                        "p": "product_url",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "selling_price",
+                        "ap": "",
+                        "dt": "float",
+                        "adt": "",
+                        "desc": "cost of product"
+                    }
+                ],
+                "attributes": []
+            },
+            {
+                "name": "Cart Items",
+                "payloads": [
+                    {
+                        "p": "status",
+                        "ap": "",
+                        "dt": "",
+                        "adt": "",
+                        "desc": "yes or no based on item present on cart"
+                    },
+                    {
+                        "p": "total_prqt",
+                        "ap": "",
+                        "dt": "integer",
+                        "adt": "",
+                        "desc": "total product count"
+                    },
+                    {
+                        "p": "selling_amount",
+                        "ap": "",
+                        "dt": "float",
+                        "adt": "",
+                        "desc": "total selling price before discount"
+                    },
+                    {
+                        "p": "discount_amt",
+                        "ap": "",
+                        "dt": "float",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "amount",
+                        "ap": "",
+                        "dt": "float",
+                        "adt": "",
+                        "desc": "total selling amount (used in rfm)"
+                    },
+                    {
+                        "p": "items",
+                        "ap": "prid",
+                        "dt": "",
+                        "adt": "text",
+                        "desc": "All products for checkout — prid: unique product id"
+                    },
+                    {
+                        "p": "",
+                        "ap": "prqt",
+                        "dt": "",
+                        "adt": "integer",
+                        "desc": "quantity in number"
+                    },
+                    {
+                        "p": "",
+                        "ap": "image",
+                        "dt": "",
+                        "adt": "text",
+                        "desc": "Image link for product"
+                    },
+                    {
+                        "p": "",
+                        "ap": "product_name",
+                        "dt": "",
+                        "adt": "text",
+                        "desc": "Name of the product"
+                    },
+                    {
+                        "p": "",
+                        "ap": "category",
+                        "dt": "",
+                        "adt": "text",
+                        "desc": "Category Name"
+                    },
+                    {
+                        "p": "",
+                        "ap": "selling_price",
+                        "dt": "",
+                        "adt": "float",
+                        "desc": "cost of product"
+                    },
+                    {
+                        "p": "",
+                        "ap": "discounted_price",
+                        "dt": "",
+                        "adt": "float",
+                        "desc": "Cost after discount"
+                    }
+                ],
+                "attributes": []
+            },
+            {
+                "name": "Checkout",
+                "payloads": [
+                    {
+                        "p": "total_prqt",
+                        "ap": "",
+                        "dt": "integer",
+                        "adt": "",
+                        "desc": "total product count"
+                    },
+                    {
+                        "p": "selling_amount",
+                        "ap": "",
+                        "dt": "float",
+                        "adt": "",
+                        "desc": "total selling price before discount"
+                    },
+                    {
+                        "p": "discount_amt",
+                        "ap": "",
+                        "dt": "float",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "amount",
+                        "ap": "",
+                        "dt": "float",
+                        "adt": "",
+                        "desc": "total selling amount (used in rfm)"
+                    },
+                    {
+                        "p": "items",
+                        "ap": "prid",
+                        "dt": "",
+                        "adt": "text",
+                        "desc": "All products — prid: unique product id"
+                    },
+                    {
+                        "p": "",
+                        "ap": "prqt",
+                        "dt": "",
+                        "adt": "integer",
+                        "desc": "quantity in number"
+                    },
+                    {
+                        "p": "",
+                        "ap": "image",
+                        "dt": "",
+                        "adt": "text",
+                        "desc": "Image link for product"
+                    },
+                    {
+                        "p": "",
+                        "ap": "product_name",
+                        "dt": "",
+                        "adt": "text",
+                        "desc": "Name of the product"
+                    },
+                    {
+                        "p": "",
+                        "ap": "selling_price",
+                        "dt": "",
+                        "adt": "float",
+                        "desc": "cost of product"
+                    },
+                    {
+                        "p": "",
+                        "ap": "discounted_price",
+                        "dt": "",
+                        "adt": "float",
+                        "desc": "Cost after discount"
+                    }
+                ],
+                "attributes": []
+            },
+            {
+                "name": "Product Purchase",
+                "payloads": [
+                    {
+                        "p": "orderid",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "unique order id"
+                    },
+                    {
+                        "p": "total_prqt",
+                        "ap": "",
+                        "dt": "integer",
+                        "adt": "",
+                        "desc": "total product count"
+                    },
+                    {
+                        "p": "selling_amount",
+                        "ap": "",
+                        "dt": "float",
+                        "adt": "",
+                        "desc": "total selling price before discount"
+                    },
+                    {
+                        "p": "discount_amt",
+                        "ap": "",
+                        "dt": "float",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "amount",
+                        "ap": "",
+                        "dt": "float",
+                        "adt": "",
+                        "desc": "total selling amount"
+                    },
+                    {
+                        "p": "payment_mode",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "cash, card, upi, wallet"
+                    },
+                    {
+                        "p": "items",
+                        "ap": "prid",
+                        "dt": "",
+                        "adt": "text",
+                        "desc": "All products — prid: unique product id"
+                    },
+                    {
+                        "p": "",
+                        "ap": "prqt",
+                        "dt": "",
+                        "adt": "integer",
+                        "desc": "quantity in number"
+                    },
+                    {
+                        "p": "",
+                        "ap": "image",
+                        "dt": "",
+                        "adt": "text",
+                        "desc": "Image link for product"
+                    },
+                    {
+                        "p": "",
+                        "ap": "product_name",
+                        "dt": "",
+                        "adt": "text",
+                        "desc": "Name of the product"
+                    },
+                    {
+                        "p": "",
+                        "ap": "selling_price",
+                        "dt": "",
+                        "adt": "float",
+                        "desc": "cost of product"
+                    },
+                    {
+                        "p": "",
+                        "ap": "discounted_price",
+                        "dt": "",
+                        "adt": "float",
+                        "desc": "Cost after discount"
+                    }
+                ],
+                "attributes": []
+            },
+            {
+                "name": "Order Cancellation",
+                "payloads": [
+                    {
+                        "p": "orderid",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "unique order id"
+                    },
+                    {
+                        "p": "total_prqt",
+                        "ap": "",
+                        "dt": "integer",
+                        "adt": "",
+                        "desc": "total product count"
+                    },
+                    {
+                        "p": "amount",
+                        "ap": "",
+                        "dt": "float",
+                        "adt": "",
+                        "desc": "total selling amount"
+                    },
+                    {
+                        "p": "items",
+                        "ap": "prid",
+                        "dt": "",
+                        "adt": "text",
+                        "desc": "products — prid: unique product id"
+                    }
+                ],
+                "attributes": []
+            }
+        ],
+        "payMode": "flat",
+        "payFlat": "300000",
+        "pay1": "",
+        "pay2": "",
+        "pay3": "",
+        "billingDate": "2026-04-01",
+        "billingNote": "Billing will start on go-live of the use cases",
+        "step": 4,
+        "chSet": [
+            "email",
+            "sms",
+            "whatsapp",
+            "webpush",
+            "apppush"
+        ],
+        "appSet": [],
+        "pxSet": []
+    }
+}

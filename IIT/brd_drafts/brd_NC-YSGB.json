@@ -1,0 +1,122 @@
+{
+    "id": "NC-YSGB",
+    "clientName": "Experian Services India Private Limited",
+    "vertical": "bfsi",
+    "step": 4,
+    "filledBy": "Apekshit Babaria",
+    "updatedAt": "2026-05-22T17:05:48+05:30",
+    "data": {
+        "clientName": "Experian Services India Private Limited",
+        "vertical": "bfsi",
+        "region": "Domestic - West",
+        "website": "",
+        "websites": [],
+        "primaryKey": "",
+        "accountType": "MRR",
+        "pocCriteria": "",
+        "panels": [],
+        "clientContact": {
+            "name": "",
+            "email": "",
+            "phone": ""
+        },
+        "startDate": "",
+        "am": "Apekshit Babaria",
+        "amEmail": "apekshit.babaria@netcorecloud.com",
+        "pss": "Anushka Joshi",
+        "pssEmail": "anushka.joshi@netcorecloud.com",
+        "dm": "",
+        "dmEmail": "",
+        "ds": "",
+        "dsEmail": "",
+        "productCombo": "ce-px-web-app",
+        "products": [
+            "ce",
+            "px"
+        ],
+        "webEnabled": true,
+        "appEnabled": true,
+        "webType": "direct-js",
+        "webPlatform": "native",
+        "shopifyType": "",
+        "magentoVersion": "",
+        "iosMech": "swift",
+        "appSdkType": "native",
+        "webPushEnabled": false,
+        "webPushCreds": [],
+        "appPushEnabled": false,
+        "appPushCreds": [],
+        "appFeatures": [],
+        "smsSenderId": "",
+        "dataIngest": "API integration",
+        "dataIngestNotes": "",
+        "apps": [
+            "native"
+        ],
+        "pxFeats": [],
+        "appsLive": "",
+        "fcmStatus": "",
+        "stagingApp": "",
+        "datalayer": "",
+        "channels": [
+            "email",
+            "sms"
+        ],
+        "emailWarmup": true,
+        "waType": "migration",
+        "useCases": [
+            {
+                "name": "",
+                "channel": "Email",
+                "desc": "",
+                "trigger": "NA",
+                "goal": "NA",
+                "pre": ""
+            }
+        ],
+        "events": [],
+        "payMode": "flat",
+        "payFlat": "150000",
+        "currency": "INR",
+        "emailExtra": {
+            "integration": "",
+            "integrationOther": "",
+            "msgSizeKB": "",
+            "hosting": "",
+            "webhooks": "",
+            "ipPool": "",
+            "domains": "",
+            "domainPurposes": "",
+            "googleDomainRep": "",
+            "esp": "",
+            "perf": {
+                "openRate": "",
+                "clickRate": "",
+                "bounceRate": "",
+                "unsubRate": "",
+                "spamRate": ""
+            },
+            "subProcess": "",
+            "listOverall": "",
+            "listActive": "",
+            "maxVolume": "",
+            "currentIssues": "",
+            "topIsps": ""
+        },
+        "pay1": "",
+        "pay2": "",
+        "pay3": "",
+        "billingDate": "2026-06-01",
+        "billingNote": "Agreement under negotiation, anticipated closure by month end",
+        "step": 4,
+        "chSet": [
+            "email",
+            "sms"
+        ],
+        "appSet": [
+            "native"
+        ],
+        "pxSet": [],
+        "projectPlan": null
+    }
+}

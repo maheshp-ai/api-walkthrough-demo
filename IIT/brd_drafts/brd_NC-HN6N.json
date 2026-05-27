@@ -1,0 +1,116 @@
+{
+    "id": "NC-HN6N",
+    "clientName": "Perfora ",
+    "vertical": "ecommerce",
+    "step": 4,
+    "filledBy": "Hardeep",
+    "updatedAt": "2026-04-16T15:41:49+05:30",
+    "data": {
+        "clientName": "Perfora ",
+        "vertical": "ecommerce",
+        "website": "https:\/\/perforacare.com\/",
+        "primaryKey": "Mobile number",
+        "clientContact": {
+            "name": "Ismat Saifi",
+            "email": "ismat@perforacare.com",
+            "phone": "+91 97583 33697"
+        },
+        "startDate": "2026-04-17",
+        "am": "Adya Bansal",
+        "amEmail": "adya.bansal@netcorecloud.com",
+        "pss": "Ashwin Das",
+        "pssEmail": "ashwin.das@netcorecloud.com",
+        "dm": "Sudhaamshu",
+        "dmEmail": "sudhaamshu.m@netcorecloud.com",
+        "ds": "Hardeep Singh",
+        "dsEmail": "hardeep.singh@netcorecloud.com",
+        "productCombo": "ce-web",
+        "products": [
+            "ce"
+        ],
+        "webEnabled": true,
+        "appEnabled": false,
+        "webType": "shopify",
+        "webPlatform": "shopify",
+        "shopifyType": "",
+        "magentoVersion": "",
+        "iosMech": "swift",
+        "appSdkType": "native",
+        "webPushEnabled": false,
+        "webPushCreds": [],
+        "appPushEnabled": false,
+        "appPushCreds": [],
+        "appFeatures": [],
+        "smsSenderId": "PRFORA , PERFRA",
+        "dataIngest": "API integration",
+        "apps": [],
+        "pxFeats": [],
+        "appsLive": "",
+        "fcmStatus": "",
+        "stagingApp": "",
+        "datalayer": "",
+        "channels": [
+            "email",
+            "sms",
+            "whatsapp",
+            "webpush",
+            "apppush",
+            "rcs"
+        ],
+        "emailWarmup": true,
+        "waType": "fresh",
+        "useCases": [
+            {
+                "name": "Cart Abandoned Journey",
+                "channel": "Email, SMS, WhatsApp, RCS",
+                "desc": "Re-engage users who added items to cart but did not complete purchase",
+                "trigger": "Add to Cart",
+                "goal": "Product Purchase",
+                "pre": "Shopify integration done\nChannels active\nTemplates created on Netcore"
+            },
+            {
+                "name": "Welcome Journey",
+                "channel": "Email, SMS, WhatsApp",
+                "desc": "Send  welcome communication when users signup",
+                "trigger": "Customer Register",
+                "goal": "Product Purchase",
+                "pre": "Shopify integration done\nChannels active\nTemplates created on Netcore"
+            },
+            {
+                "name": "Abandoned checkout drop off (generic)",
+                "channel": "Email, SMS, WhatsApp",
+                "desc": "Send abandoned checkout communication when user drop off from Checkout",
+                "trigger": "Checkout Started",
+                "goal": "Product Purchase",
+                "pre": "Shopify integration done\nChannels active\nTemplates created on Netcore"
+            },
+            {
+                "name": "Product View Abandoned (generic)",
+                "channel": "Email, SMS, WhatsApp",
+                "desc": "Whenever user does a Product view and not do add to cart, send Product abandoned communication",
+                "trigger": "Product View",
+                "goal": "Add to Cart",
+                "pre": "Shopify integration done\nChannels active\nTemplates created on Netcore"
+            }
+        ],
+        "events": [],
+        "payMode": "flat",
+        "payFlat": "170000",
+        "pay1": "",
+        "pay2": "",
+        "pay3": "",
+        "billingDate": "2026-06-01",
+        "billingNote": "",
+        "step": 4,
+        "chSet": [
+            "email",
+            "sms",
+            "whatsapp",
+            "webpush",
+            "apppush",
+            "rcs"
+        ],
+        "appSet": [],
+        "pxSet": []
+    }
+}

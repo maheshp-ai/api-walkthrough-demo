@@ -1,0 +1,88 @@
+{
+    "id": "NC-Z2SH",
+    "clientName": "Prestige Group",
+    "vertical": "other",
+    "step": 4,
+    "filledBy": "Anonymous",
+    "updatedAt": "2026-04-08T17:32:45+05:30",
+    "data": {
+        "clientName": "Prestige Group",
+        "vertical": "other",
+        "website": "https:\/\/www.prestigeconstructions.com\/",
+        "primaryKey": "Mobile number",
+        "clientContact": {
+            "name": " Pooja Subbaiah",
+            "email": "thecollection@prestigeconstructions.com",
+            "phone": ""
+        },
+        "startDate": "2026-02-04",
+        "am": "Amit Desai",
+        "amEmail": "amit.desai@netcorecloud.com",
+        "pss": "Jibin",
+        "pssEmail": "jibin.philip@netcorecloud.com",
+        "dm": "Shipra",
+        "dmEmail": "shipra.choudhary@netcorecloud.com",
+        "ds": "Mili Kanoo",
+        "dsEmail": "mili.kanoo@netcorecloud.com",
+        "productCombo": "ce-web",
+        "products": [
+            "ce"
+        ],
+        "webEnabled": true,
+        "appEnabled": false,
+        "webType": "gtm",
+        "webPlatform": "native",
+        "shopifyType": "",
+        "magentoVersion": "",
+        "iosMech": "swift",
+        "appSdkType": "native",
+        "webPushEnabled": false,
+        "webPushCreds": [],
+        "appPushEnabled": false,
+        "appPushCreds": [],
+        "appFeatures": [],
+        "smsSenderId": "",
+        "dataIngest": "API integration, CSV upload",
+        "apps": [],
+        "pxFeats": [],
+        "appsLive": "yes",
+        "fcmStatus": "yes",
+        "stagingApp": "yes",
+        "datalayer": "yes",
+        "channels": [
+            "email",
+            "rcs",
+            "sms",
+            "whatsapp"
+        ],
+        "emailWarmup": true,
+        "waType": "fresh",
+        "useCases": [
+            {
+                "name": "Improve Broadcast delivery and CTR via journeys",
+                "channel": "WhatsApp",
+                "desc": "Whatsapp messages should be sent",
+                "trigger": "NA",
+                "goal": "NA",
+                "pre": "Data should be uploaded via CSVs\nChannels must be active"
+            }
+        ],
+        "events": [],
+        "payMode": "flat",
+        "payFlat": "110000",
+        "pay1": "",
+        "pay2": "",
+        "pay3": "",
+        "billingDate": "2026-04-01",
+        "billingNote": "Billing will start on go-live of the use cases",
+        "step": 4,
+        "chSet": [
+            "email",
+            "rcs",
+            "sms",
+            "whatsapp"
+        ],
+        "appSet": [],
+        "pxSet": []
+    }
+}

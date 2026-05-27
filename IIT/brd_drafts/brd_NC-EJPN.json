@@ -1,0 +1,843 @@
+{
+    "id": "NC-EJPN",
+    "clientName": "Bounce",
+    "vertical": "travel",
+    "step": 4,
+    "filledBy": "Mandovi",
+    "updatedAt": "2026-05-20T11:31:29+05:30",
+    "data": {
+        "clientName": "Bounce",
+        "vertical": "travel",
+        "region": "Domestic - South",
+        "website": "",
+        "primaryKey": "Mobile number",
+        "clientContact": {
+            "name": "Aum",
+            "email": "aum@bounceshare.com",
+            "phone": ""
+        },
+        "startDate": "2026-05-20",
+        "am": "Himadri Das",
+        "amEmail": "himadri.das@netcorecloud.com",
+        "pss": "Jibin Philip",
+        "pssEmail": "jibin.philip@netcorecloud.com",
+        "dm": "Shipra Choudhary",
+        "dmEmail": "shipra.choudhary@netcorecloud.com",
+        "ds": "Mandovi Joseph",
+        "dsEmail": "mandovi.joseph@netcorecloud.com",
+        "productCombo": "ce-px-app",
+        "products": [
+            "ce",
+            "px"
+        ],
+        "webEnabled": false,
+        "appEnabled": true,
+        "webType": "gtm",
+        "webPlatform": "native",
+        "shopifyType": "",
+        "magentoVersion": "",
+        "iosMech": "swift",
+        "appSdkType": "flutter",
+        "webPushEnabled": false,
+        "webPushCreds": [],
+        "appPushEnabled": false,
+        "appPushCreds": [],
+        "appFeatures": [
+            "urlredir",
+            "deeplink",
+            "geofence",
+            "dynviews"
+        ],
+        "smsSenderId": "",
+        "dataIngest": "API integration",
+        "apps": [
+            "flutter"
+        ],
+        "pxFeats": [],
+        "appsLive": "yes",
+        "fcmStatus": "yes",
+        "stagingApp": "yes",
+        "datalayer": "yes",
+        "channels": [
+            "whatsapp"
+        ],
+        "emailWarmup": true,
+        "waType": "fresh",
+        "useCases": [
+            {
+                "name": "Contextual Nudge walkthrough\t\t\t\t\t\t\t\t\t\t\t\t",
+                "channel": "Nudge",
+                "desc": "Whenever a new new user launches the app first time or on app reinstalls , give a complete nudge walkthrough of the app to the rider\t\t\t\t\t\t\t\t\t",
+                "trigger": "App Launch",
+                "goal": "NA",
+                "pre": "· Nudges (Px) should be activated on CE panel.\t\t\t\t\t\t\t\t\t\t\t\t\n· Templates of the nudges to be uploaded on CE panel by Bounce"
+            },
+            {
+                "name": "Booking confirmation\t\t\t\t\t\t\t\t\t\t\t\t",
+                "channel": "WhatsApp",
+                "desc": "Whenever registered user has pre booked a ride and completed the payment for it send booking confirmation & also inform them about the ride credits earned\t\t\t\t\t\t\t\t\t\t\t\t",
+                "trigger": "Ride Booked",
+                "goal": "NA",
+                "pre": "· Channels (Whatsapp) should be activated on CE panel.\n· Events like KYC complete, booking status, payment successful, etc should be passed to Netcore CE panel.\n· Templates to be uploaded on CE panel by Bounce for all channels."
+            },
+            {
+                "name": "Earn referral contact and share ride credits\t\t\t\t\t\t\t\t\t\t\t\t",
+                "channel": "App Push, In-App",
+                "desc": "Sending notification to active riders on Day 3 of any rental who have not yet generated a successful referral, share ride credits on successful referrals\t\t\t\t\t\t\t\t\t\t\t\t",
+                "trigger": "Ride Booked",
+                "goal": "Referral Generated",
+                "pre": "· Channels (APN, In-app) should be activated on CE panel.\n· Events like KYC complete, referral number shared, new user active through referral, etc should be passed to Netcore CE panel.\n· Templates to be uploaded on CE panel by Bounce for all channels."
+            }
+        ],
+        "events": [
+            {
+                "name": "Registration",
+                "payloads": [
+                    {
+                        "p": "source",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "method",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": ""
+                    }
+                ],
+                "attributes": [
+                    {
+                        "a": "EMAIL",
+                        "dt": "textline",
+                        "desc": ""
+                    },
+                    {
+                        "a": "MOBILE",
+                        "dt": "textline",
+                        "desc": ""
+                    },
+                    {
+                        "a": "FIRST_NAME",
+                        "dt": "textline",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "Sign in",
+                "payloads": [
+                    {
+                        "p": "source",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "method",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": ""
+                    }
+                ],
+                "attributes": [
+                    {
+                        "a": "LAST_LOGIN_SOURCE",
+                        "dt": "textline",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "Search",
+                "payloads": [
+                    {
+                        "p": "origin",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "destination",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "check_in",
+                        "ap": "",
+                        "dt": "date",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "check_out",
+                        "ap": "",
+                        "dt": "date",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "guests",
+                        "ap": "",
+                        "dt": "integer",
+                        "adt": "",
+                        "desc": "number of guests"
+                    },
+                    {
+                        "p": "type",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "hotel, flight, package"
+                    }
+                ],
+                "attributes": [
+                    {
+                        "a": "LAST_SEARCH_DESTINATION",
+                        "dt": "textline",
+                        "desc": ""
+                    },
+                    {
+                        "a": "LAST_SEARCH_DATE",
+                        "dt": "date",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "Property View",
+                "payloads": [
+                    {
+                        "p": "property_id",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "unique property id"
+                    },
+                    {
+                        "p": "property_name",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "city",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "price_per_night",
+                        "ap": "",
+                        "dt": "float",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "check_in",
+                        "ap": "",
+                        "dt": "date",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "rating",
+                        "ap": "",
+                        "dt": "float",
+                        "adt": "",
+                        "desc": ""
+                    }
+                ],
+                "attributes": []
+            },
+            {
+                "name": "Booking Initiated",
+                "payloads": [
+                    {
+                        "p": "property_id",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "total_value",
+                        "ap": "",
+                        "dt": "float",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "check_in",
+                        "ap": "",
+                        "dt": "date",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "check_out",
+                        "ap": "",
+                        "dt": "date",
+                        "adt": "",
+                        "desc": ""
+                    }
+                ],
+                "attributes": []
+            },
+            {
+                "name": "Booking Confirmed",
+                "payloads": [
+                    {
+                        "p": "booking_id",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": "unique booking id"
+                    },
+                    {
+                        "p": "property_id",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "total_value",
+                        "ap": "",
+                        "dt": "float",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "check_in",
+                        "ap": "",
+                        "dt": "date",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "check_out",
+                        "ap": "",
+                        "dt": "date",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "payment_mode",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": ""
+                    }
+                ],
+                "attributes": [
+                    {
+                        "a": "TOTAL_BOOKINGS",
+                        "dt": "integer",
+                        "desc": ""
+                    },
+                    {
+                        "a": "TOTAL_SPEND",
+                        "dt": "",
+                        "desc": ""
+                    },
+                    {
+                        "a": "LAST_BOOKING_DATE",
+                        "dt": "date",
+                        "desc": ""
+                    },
+                    {
+                        "a": "LOYALTY_POIntegerS",
+                        "dt": "integer",
+                        "desc": ""
+                    }
+                ]
+            },
+            {
+                "name": "Booking Cancelled",
+                "payloads": [
+                    {
+                        "p": "booking_id",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "reason",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "refund_amount",
+                        "ap": "",
+                        "dt": "float",
+                        "adt": "",
+                        "desc": ""
+                    }
+                ],
+                "attributes": []
+            },
+            {
+                "name": "Review Submitted",
+                "payloads": [
+                    {
+                        "p": "property_id",
+                        "ap": "",
+                        "dt": "text",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "rating",
+                        "ap": "",
+                        "dt": "float",
+                        "adt": "",
+                        "desc": ""
+                    },
+                    {
+                        "p": "review_length",
+                        "ap": "",
+                        "dt": "integer",
+                        "adt": "",
+                        "desc": ""
+                    }
+                ],
+                "attributes": []
+            }
+        ],
+        "payMode": "flat",
+        "payFlat": "100000",
+        "currency": "INR",
+        "emailExtra": {
+            "integration": "",
+            "integrationOther": "",
+            "msgSizeKB": "",
+            "hosting": "",
+            "webhooks": "",
+            "ipPool": "",
+            "domains": "",
+            "domainPurposes": "",
+            "googleDomainRep": "",
+            "esp": "",
+            "perf": {
+                "openRate": "",
+                "clickRate": "",
+                "bounceRate": "",
+                "unsubRate": "",
+                "spamRate": ""
+            },
+            "subProcess": "",
+            "listOverall": "",
+            "listActive": "",
+            "maxVolume": "",
+            "currentIssues": "",
+            "topIsps": ""
+        },
+        "pay1": "",
+        "pay2": "",
+        "pay3": "",
+        "billingDate": "2026-08-15",
+        "billingNote": "",
+        "step": 4,
+        "chSet": [
+            "whatsapp"
+        ],
+        "appSet": [
+            "flutter"
+        ],
+        "pxSet": [],
+        "projectPlan": {
+            "v": 1,
+            "taskData": [
+                {
+                    "sno": "1",
+                    "title": "Pre Kick Off",
+                    "type": "phase",
+                    "ch": [],
+                    "s": 0,
+                    "d": 2,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "1.1",
+                    "title": "Sales Handover",
+                    "type": "task",
+                    "ch": [],
+                    "s": 0,
+                    "d": 1,
+                    "assignee": "NS"
+                },
+                {
+                    "sno": "1.2",
+                    "title": "BRD & PO",
+                    "type": "task",
+                    "ch": [],
+                    "s": 1,
+                    "d": 1,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "1.3",
+                    "title": "Internal Discovery",
+                    "type": "task",
+                    "ch": [],
+                    "s": 1,
+                    "d": 1,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "1.4",
+                    "title": "Assign Implementation Engineer",
+                    "type": "task",
+                    "ch": [],
+                    "s": 1,
+                    "d": 1,
+                    "assignee": "NO"
+                },
+                {
+                    "sno": "2",
+                    "title": "Client Kick Off & Discovery",
+                    "type": "phase",
+                    "ch": [],
+                    "s": 2,
+                    "d": 5,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "2.1",
+                    "title": "Primary Key Finalized",
+                    "type": "task",
+                    "ch": [],
+                    "s": 2,
+                    "d": 1,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "2.2",
+                    "title": "Use Case Discussion",
+                    "type": "task",
+                    "ch": [],
+                    "s": 2,
+                    "d": 2,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "2.3",
+                    "title": "Tech Feasibility Discussion",
+                    "type": "task",
+                    "ch": [],
+                    "s": 2,
+                    "d": 2,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "2.4",
+                    "title": "Events & Attributes Discussion",
+                    "type": "task",
+                    "ch": [],
+                    "s": 2,
+                    "d": 2,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "2.5",
+                    "title": "WhatsApp Discovery",
+                    "type": "task",
+                    "ch": [
+                        "WhatsApp"
+                    ],
+                    "s": 2,
+                    "d": 1,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "2.6",
+                    "title": "SOW Internal Sign Off",
+                    "type": "task",
+                    "ch": [],
+                    "s": 4,
+                    "d": 1,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "2.7",
+                    "title": "SOW Client Sign Off",
+                    "type": "task",
+                    "ch": [],
+                    "s": 5,
+                    "d": 2,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "2.8",
+                    "title": "Panel Creation",
+                    "type": "task",
+                    "ch": [],
+                    "s": 5,
+                    "d": 1,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "2.9",
+                    "title": "MOM Client Discovery",
+                    "type": "task",
+                    "ch": [],
+                    "s": 6,
+                    "d": 1,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "3",
+                    "title": "Integration",
+                    "type": "phase",
+                    "ch": [],
+                    "s": 6,
+                    "d": 7,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "3.1",
+                    "title": "Implementation Engineer Intro & Assign",
+                    "type": "task",
+                    "ch": [],
+                    "s": 6,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "3.2",
+                    "title": "WhatsApp Implementation",
+                    "type": "task",
+                    "ch": [
+                        "WhatsApp"
+                    ],
+                    "s": 6,
+                    "d": 4,
+                    "assignee": "NI"
+                },
+                {
+                    "sno": "3.2.1",
+                    "title": "WABA Account Creation Request",
+                    "type": "sub",
+                    "ch": [
+                        "WhatsApp"
+                    ],
+                    "s": 6,
+                    "d": 3,
+                    "assignee": "NI"
+                },
+                {
+                    "sno": "3.2.2",
+                    "title": "WABA Account Verified via OTP",
+                    "type": "sub",
+                    "ch": [
+                        "WhatsApp"
+                    ],
+                    "s": 9,
+                    "d": 1,
+                    "assignee": "NI"
+                },
+                {
+                    "sno": "4",
+                    "title": "Product Configuration & Testing",
+                    "type": "phase",
+                    "ch": [],
+                    "s": 12,
+                    "d": 2,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "4.1",
+                    "title": "Use Case Testing",
+                    "type": "task",
+                    "ch": [],
+                    "s": 15,
+                    "d": 3,
+                    "assignee": "NC"
+                },
+                {
+                    "sno": "4.1.1",
+                    "title": "WhatsApp Use Case Setup",
+                    "type": "sub",
+                    "ch": [
+                        "WhatsApp"
+                    ],
+                    "s": 15,
+                    "d": 1,
+                    "assignee": "NC"
+                },
+                {
+                    "sno": "4.2",
+                    "title": "Product Config & Testing Completed",
+                    "type": "task",
+                    "ch": [],
+                    "s": 13,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "5",
+                    "title": "Use Case Setup & User Training",
+                    "type": "phase",
+                    "ch": [],
+                    "s": 14,
+                    "d": 3,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "5.1",
+                    "title": "Template Creation",
+                    "type": "task",
+                    "ch": [],
+                    "s": 14,
+                    "d": 3,
+                    "assignee": "T"
+                },
+                {
+                    "sno": "5.2",
+                    "title": "Campaign Creation",
+                    "type": "task",
+                    "ch": [],
+                    "s": 17,
+                    "d": 1,
+                    "assignee": "T"
+                },
+                {
+                    "sno": "5.3",
+                    "title": "Journey Creation",
+                    "type": "task",
+                    "ch": [],
+                    "s": 18,
+                    "d": 1,
+                    "assignee": "T"
+                },
+                {
+                    "sno": "5.4",
+                    "title": "Dashboard Overview",
+                    "type": "task",
+                    "ch": [],
+                    "s": 15,
+                    "d": 1,
+                    "assignee": "T"
+                },
+                {
+                    "sno": "5.5",
+                    "title": "User Training Completed",
+                    "type": "task",
+                    "ch": [],
+                    "s": 16,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "6",
+                    "title": "Go Live",
+                    "type": "phase",
+                    "ch": [],
+                    "s": 17,
+                    "d": 5,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "6.1",
+                    "title": "Use Case Go Live",
+                    "type": "task",
+                    "ch": [],
+                    "s": 17,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "6.1.1",
+                    "title": "WhatsApp Go Live",
+                    "type": "sub",
+                    "ch": [
+                        "WhatsApp"
+                    ],
+                    "s": 17,
+                    "d": 1,
+                    "assignee": "T"
+                },
+                {
+                    "sno": "6.2",
+                    "title": "Performance Review",
+                    "type": "task",
+                    "ch": [],
+                    "s": 20,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "6.3",
+                    "title": "Review & Feedback",
+                    "type": "task",
+                    "ch": [],
+                    "s": 20,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "7",
+                    "title": "Handover",
+                    "type": "phase",
+                    "ch": [],
+                    "s": 19,
+                    "d": 3,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "7.1",
+                    "title": "Handover Document",
+                    "type": "task",
+                    "ch": [],
+                    "s": 19,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "7.2",
+                    "title": "Handover Email Raised",
+                    "type": "task",
+                    "ch": [],
+                    "s": 19,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "7.3",
+                    "title": "Internal Handover Call",
+                    "type": "task",
+                    "ch": [],
+                    "s": 20,
+                    "d": 1,
+                    "assignee": "MB"
+                }
+            ],
+            "taskStatuses": [],
+            "baselines": [],
+            "currentPacing": "aggressive",
+            "comments": null,
+            "form": {
+                "customer": "Bounce",
+                "projname": "Bounce — Onboarding",
+                "pm": "Mandovi Joseph",
+                "status": "Active",
+                "template": "custom",
+                "start": "2026-05-18",
+                "end": "2026-06-07"
+            }
+        }
+    }
+}

@@ -1,0 +1,214 @@
+{
+    "id": "NC-FSQE",
+    "clientName": "Sandeep_Test",
+    "vertical": "fintech",
+    "step": 4,
+    "filledBy": "sandeep",
+    "updatedAt": "2026-05-22T16:22:53+05:30",
+    "data": {
+        "clientName": "Sandeep_Test",
+        "vertical": "fintech",
+        "region": "Domestic - West",
+        "website": "www.google.com",
+        "websites": [
+            "www.google.com",
+            "www.werrw.com",
+            "www.yahoo.com"
+        ],
+        "primaryKey": "EMAIL",
+        "accountType": "MRR",
+        "pocCriteria": "",
+        "panels": [
+            {
+                "name": "ucobank",
+                "pk": "EMAIL",
+                "notes": ""
+            },
+            {
+                "name": "bajajauto",
+                "pk": "ACCOUNTNO",
+                "notes": ""
+            }
+        ],
+        "clientContact": {
+            "name": "Sandeep Shetty",
+            "email": "sandeep.shetty@netcorecloud.com",
+            "phone": "8668309586"
+        },
+        "startDate": "2026-05-22",
+        "am": "Apekshit Babaria",
+        "amEmail": "apekshit.babaria@netcorecloud.com",
+        "pss": "Anushka joshi",
+        "pssEmail": "anushka.joshi@netcorecloud.com",
+        "dm": "Shipra Choudhary",
+        "dmEmail": "shipra.choudhary@netcorecloud.com",
+        "ds": "Mili Kanoo",
+        "dsEmail": "mili.kanoo@netcorecloud.com",
+        "productCombo": "ce-px-web-app",
+        "products": [
+            "ce",
+            "px"
+        ],
+        "webEnabled": true,
+        "appEnabled": true,
+        "webType": "direct-js",
+        "webPlatform": "native",
+        "shopifyType": "",
+        "magentoVersion": "",
+        "iosMech": "swift",
+        "appSdkType": "native",
+        "webPushEnabled": false,
+        "webPushCreds": [],
+        "appPushEnabled": false,
+        "appPushCreds": [],
+        "appFeatures": [
+            "deeplink",
+            "urlredir",
+            "geofence",
+            "swiftui"
+        ],
+        "smsSenderId": "",
+        "dataIngest": "API integration, Amazon S3, Snowflake \/ Datalake, Salesforce",
+        "dataIngestNotes": "data need to be updated every 2pm",
+        "apps": [
+            "native"
+        ],
+        "pxFeats": [],
+        "appsLive": "",
+        "fcmStatus": "",
+        "stagingApp": "",
+        "datalayer": "",
+        "channels": [
+            "email",
+            "sms"
+        ],
+        "emailWarmup": true,
+        "waType": "fresh",
+        "useCases": [
+            {
+                "name": "Mobile Number validations using OTP",
+                "channel": "SMS",
+                "desc": "We will validate the user's mobile number by sending OTP via SMS that they must enter to complete registration or login.",
+                "trigger": "NA",
+                "goal": "NA",
+                "pre": "SMS CpaaS panel is required."
+            },
+            {
+                "name": "Foget MPIN",
+                "channel": "SMS",
+                "desc": "Users can reset their forgotten MPIN by verifying their identity through an OTP sent to their registered mobile number.",
+                "trigger": "NA",
+                "goal": "NA",
+                "pre": "SMS CpaaS panel is required."
+            },
+            {
+                "name": "Payment Completion",
+                "channel": "SMS, App Push",
+                "desc": "We will send an immediate payment completion confirmation message via APN and SMS to the user once their transaction is successfully processed.",
+                "trigger": "payment_successful",
+                "goal": "NA",
+                "pre": "SMS and APN channel must be active.\nApp integration needs to be done.\nTemplates to be active on Netcore."
+            },
+            {
+                "name": "Payment completion - Subscription & Payments Enhancements",
+                "channel": "Email, SMS",
+                "desc": "We will send SMS and email for all new subscriptions, renewals, and upgraded payment transactions.",
+                "trigger": "payment_successful",
+                "goal": "payment completion",
+                "pre": "Email, SMS channel must be active.\nTemplates to be created on Netcore."
+            },
+            {
+                "name": "General Alerts & Notifications",
+                "channel": "SMS, App Push",
+                "desc": "We will trigger real-time, APN and SMS alerts to instantly notify users of critical system events, and account actions like an MPIN failure.",
+                "trigger": "pin_failure",
+                "goal": "screen_load [page_name- pin_success]",
+                "pre": "SMS and APN channel must be active.\nApp integration needs to be done.\nTemplates to be created on Netcore."
+            },
+            {
+                "name": "Learning",
+                "channel": "App Push",
+                "desc": "We will send an automated notification to users upon the successful completion of a learning chapter to track their progress and encourage them to start the next lesson.",
+                "trigger": "screen_load",
+                "goal": "screen_load",
+                "pre": "APN channel must be active.\nApp integration needs to be done.\nTemplates to be created on Netcore."
+            },
+            {
+                "name": "Referral",
+                "channel": "App Push",
+                "desc": "We will trigger automated push notifications (APN) to keep users updated on their referral status whenever a referee's status changes to pending, joined, or rewarded.",
+                "trigger": "referral_initiated",
+                "goal": "referral_completed",
+                "pre": "APN channel must be active.\nApp integration needs to be done.\nTemplates to be created on Netcore."
+            },
+            {
+                "name": "User Profile",
+                "channel": "App Push",
+                "desc": "An automated push notification (APN) and SMS will be sent to the users after they successfully add or update their email address or mobile number in their profile.",
+                "trigger": "profile_update",
+                "goal": "NA",
+                "pre": "APN, SMS channel must be active.\nApp integration needs to be done.\nTemplates to be created on Netcore."
+            },
+            {
+                "name": "Consent Revocation, Extension & Expiry Nudging",
+                "channel": "Email",
+                "desc": "SMS and push notifications will be sent to users whenever their account consent is revoked, extended, or approaching expiry.",
+                "trigger": "consent_expiry , consent_extension , consent_revoke",
+                "goal": "NA",
+                "pre": "APN, SMS channel must be active.\nApp integration needs to be done.\nTemplates to be created on Netcore."
+            },
+            {
+                "name": "Drop chase journey",
+                "channel": "SMS, App Push",
+                "desc": "We will send targeted push notifications (APN) and SMS reminders to chase and re-engage users who drop off during the journey until their payment is successfully completed.",
+                "trigger": "payment_initiated",
+                "goal": "payment_successful",
+                "pre": "APN, SMS channel must be active.\nApp integration needs to be done.\nTemplates to be created on Netcore."
+            }
+        ],
+        "events": [],
+        "payMode": "flat",
+        "payFlat": "1000000",
+        "currency": "INR",
+        "emailExtra": {
+            "integration": "",
+            "integrationOther": "",
+            "msgSizeKB": "",
+            "hosting": "",
+            "webhooks": "",
+            "ipPool": "",
+            "domains": "",
+            "domainPurposes": "",
+            "googleDomainRep": "",
+            "esp": "",
+            "perf": {
+                "openRate": "",
+                "clickRate": "",
+                "bounceRate": "",
+                "unsubRate": "",
+                "spamRate": ""
+            },
+            "subProcess": "",
+            "listOverall": "",
+            "listActive": "",
+            "maxVolume": "",
+            "currentIssues": "",
+            "topIsps": ""
+        },
+        "pay1": "",
+        "pay2": "",
+        "pay3": "",
+        "billingDate": "2026-05-28",
+        "billingNote": "Billing will commence on go-live of use-cases",
+        "step": 4,
+        "chSet": [
+            "email",
+            "sms"
+        ],
+        "appSet": [
+            "native"
+        ],
+        "pxSet": [],
+        "projectPlan": null
+    }
+}

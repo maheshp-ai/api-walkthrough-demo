@@ -1,0 +1,120 @@
+{
+    "id": "NC-48R8",
+    "clientName": "Rupitap ",
+    "vertical": "fintech",
+    "step": 3,
+    "filledBy": "Anonymous",
+    "updatedAt": "2026-05-20T15:36:17+05:30",
+    "data": {
+        "clientName": "Rupitap ",
+        "vertical": "fintech",
+        "region": "Domestic - South",
+        "website": "",
+        "primaryKey": "Mobile number",
+        "clientContact": {
+            "name": "",
+            "email": "",
+            "phone": ""
+        },
+        "startDate": "",
+        "am": "",
+        "amEmail": "",
+        "pss": "",
+        "pssEmail": "",
+        "dm": "",
+        "dmEmail": "",
+        "ds": "",
+        "dsEmail": "",
+        "productCombo": "ce-web-app",
+        "products": [
+            "ce"
+        ],
+        "webEnabled": true,
+        "appEnabled": true,
+        "webType": "direct-js",
+        "webPlatform": "native",
+        "shopifyType": "",
+        "magentoVersion": "",
+        "iosMech": "swift",
+        "appSdkType": "native",
+        "webPushEnabled": false,
+        "webPushCreds": [],
+        "appPushEnabled": false,
+        "appPushCreds": [],
+        "appFeatures": [],
+        "smsSenderId": "",
+        "dataIngest": "CSV upload",
+        "apps": [
+            "native"
+        ],
+        "pxFeats": [],
+        "appsLive": "",
+        "fcmStatus": "",
+        "stagingApp": "",
+        "datalayer": "",
+        "channels": [
+            "email",
+            "sms",
+            "whatsapp",
+            "rcs"
+        ],
+        "emailWarmup": true,
+        "waType": "fresh",
+        "useCases": [
+            {
+                "name": "Welcome Journey",
+                "channel": "Email",
+                "desc": "",
+                "trigger": "NA",
+                "goal": "NA",
+                "pre": ""
+            }
+        ],
+        "events": [],
+        "payMode": "flat",
+        "payFlat": "",
+        "currency": "INR",
+        "emailExtra": {
+            "integration": "",
+            "integrationOther": "",
+            "msgSizeKB": "",
+            "hosting": "",
+            "webhooks": "",
+            "ipPool": "",
+            "domains": "",
+            "domainPurposes": "",
+            "googleDomainRep": "",
+            "esp": "",
+            "perf": {
+                "openRate": "",
+                "clickRate": "",
+                "bounceRate": "",
+                "unsubRate": "",
+                "spamRate": ""
+            },
+            "subProcess": "",
+            "listOverall": "",
+            "listActive": "",
+            "maxVolume": "",
+            "currentIssues": "",
+            "topIsps": ""
+        },
+        "pay1": "",
+        "pay2": "",
+        "pay3": "",
+        "billingDate": "",
+        "billingNote": "",
+        "step": 3,
+        "chSet": [
+            "email",
+            "sms",
+            "whatsapp",
+            "rcs"
+        ],
+        "appSet": [
+            "native"
+        ],
+        "pxSet": [],
+        "projectPlan": null
+    }
+}

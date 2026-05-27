@@ -1,0 +1,103 @@
+{
+    "id": "NC-A3DJ",
+    "clientName": "Klinq",
+    "vertical": "fintech",
+    "step": 3,
+    "filledBy": "Prateek",
+    "updatedAt": "2026-04-09T17:06:47+05:30",
+    "data": {
+        "clientName": "Klinq",
+        "vertical": "fintech",
+        "website": "https:\/\/www.myklinq.com\/",
+        "primaryKey": "Mobile number",
+        "clientContact": {
+            "name": "Suraj Mudliar",
+            "email": "suraj.mudliar@creditt.in",
+            "phone": "+91 9607557196"
+        },
+        "startDate": "2026-04-13",
+        "am": "Subhalaxmi Mohanty",
+        "amEmail": "subhalaxmi.mohanty@netcorecloud.com",
+        "pss": "Amey Vaidya",
+        "pssEmail": "amey.vaidya@netcorecloud.com",
+        "dm": "Hardeep Singh",
+        "dmEmail": "hardeep.singh@netcorecloud.com",
+        "ds": "Prateek Singh",
+        "dsEmail": "prateek.singh@netcorecloud.com",
+        "productCombo": "ce-web-app",
+        "products": [
+            "ce"
+        ],
+        "webEnabled": true,
+        "appEnabled": true,
+        "webType": "gtm",
+        "webPlatform": "native",
+        "shopifyType": "",
+        "magentoVersion": "",
+        "iosMech": "swift",
+        "appSdkType": "native",
+        "webPushEnabled": false,
+        "webPushCreds": [],
+        "appPushEnabled": false,
+        "appPushCreds": [],
+        "appFeatures": [
+            "deeplink",
+            "urlredir"
+        ],
+        "smsSenderId": "",
+        "dataIngest": "API integration, CSV upload",
+        "apps": [
+            "native"
+        ],
+        "pxFeats": [],
+        "appsLive": "",
+        "fcmStatus": "",
+        "stagingApp": "",
+        "datalayer": "",
+        "channels": [
+            "email",
+            "sms",
+            "whatsapp",
+            "apppush"
+        ],
+        "emailWarmup": true,
+        "waType": "fresh",
+        "useCases": [
+            {
+                "name": "User Welcome Flow",
+                "channel": "Email, SMS, WhatsApp, Web Push, App Push",
+                "desc": "When a user registers on the app\/website, trigger a welcome journey and encourage PAN verification.The precise journey flow and wait nodes will be determined and configured while drafting the journeys.",
+                "trigger": "User Registration Completed",
+                "goal": "PAN Verified Successfully",
+                "pre": "App and Web Integration (Events Tracking)\nRespective Channel Activation\nRespective Channel Templates to be uploaded\/drafted on panel by Klinq team."
+            },
+            {
+                "name": "Onboarding \/ KYC Drop-off",
+                "channel": "Email, SMS, WhatsApp, Web Push, App Push",
+                "desc": "If a user starts onboarding and completes Aadhaar verification but drops off before completing KYC, send reminders to complete the process. The precise journey flow and wait nodes will be determined and configured while drafting the journeys.",
+                "trigger": "EMI Due - 3 days",
+                "goal": "Payment Made",
+                "pre": "Payment data integrated"
+            }
+        ],
+        "events": [],
+        "payMode": "flat",
+        "payFlat": "75000",
+        "pay1": "",
+        "pay2": "",
+        "pay3": "",
+        "billingDate": "2026-05-01",
+        "billingNote": "",
+        "step": 3,
+        "chSet": [
+            "email",
+            "sms",
+            "whatsapp",
+            "apppush"
+        ],
+        "appSet": [
+            "native"
+        ],
+        "pxSet": []
+    }
+}

@@ -1,0 +1,961 @@
+{
+    "id": "NC-EQMW",
+    "clientName": "Experian",
+    "vertical": "fintech",
+    "step": 4,
+    "filledBy": "Mili",
+    "updatedAt": "2026-05-21T23:32:06+05:30",
+    "data": {
+        "clientName": "Experian",
+        "vertical": "fintech",
+        "region": "Domestic - West",
+        "website": "",
+        "primaryKey": "Customer ID",
+        "clientContact": {
+            "name": "Shubhendu",
+            "email": "Shubhendu.Awasthi@experian.com",
+            "phone": ""
+        },
+        "startDate": "2026-06-25",
+        "am": "Apekshit Babaria",
+        "amEmail": "apekshit.babaria@netcorecloud.com",
+        "pss": "Anushka joshi",
+        "pssEmail": "anushka.joshi@netcorecloud.com",
+        "dm": "Shipra Choudhary",
+        "dmEmail": "shipra.choudhary@netcorecloud.com",
+        "ds": "Mili Kanoo",
+        "dsEmail": "mili.kanoo@netcorecloud.com",
+        "productCombo": "ce-web-app",
+        "products": [
+            "ce"
+        ],
+        "webEnabled": false,
+        "appEnabled": true,
+        "webType": "direct-js",
+        "webPlatform": "native",
+        "shopifyType": "",
+        "magentoVersion": "",
+        "iosMech": "swift",
+        "appSdkType": "native",
+        "webPushEnabled": false,
+        "webPushCreds": [],
+        "appPushEnabled": false,
+        "appPushCreds": [],
+        "appFeatures": [
+            "deeplink",
+            "urlredir"
+        ],
+        "smsSenderId": "",
+        "dataIngest": "API integration",
+        "apps": [
+            "native"
+        ],
+        "pxFeats": [],
+        "appsLive": "",
+        "fcmStatus": "",
+        "stagingApp": "",
+        "datalayer": "",
+        "channels": [
+            "email",
+            "sms"
+        ],
+        "emailWarmup": true,
+        "waType": "fresh",
+        "useCases": [
+            {
+                "name": "Mobile Number validations using OTP",
+                "channel": "SMS",
+                "desc": "We will validate the user's mobile number by sending OTP via SMS that they must enter to complete registration or login.",
+                "trigger": "NA",
+                "goal": "NA",
+                "pre": "SMS CpaaS panel is required."
+            },
+            {
+                "name": "Foget MPIN",
+                "channel": "SMS",
+                "desc": "Users can reset their forgotten MPIN by verifying their identity through an OTP sent to their registered mobile number.",
+                "trigger": "NA",
+                "goal": "NA",
+                "pre": "SMS CpaaS panel is required."
+            },
+            {
+                "name": "Payment Completion",
+                "channel": "SMS, App Push",
+                "desc": "We will send an immediate payment completion confirmation message via APN and SMS to the user once their transaction is successfully processed.",
+                "trigger": "payment_successful",
+                "goal": "NA",
+                "pre": "SMS and APN channel must be active.\nApp integration needs to be done.\nTemplates to be active on Netcore."
+            },
+            {
+                "name": "Payment completion - Subscription & Payments Enhancements",
+                "channel": "Email, SMS",
+                "desc": "We will send SMS and email for all new subscriptions, renewals, and upgraded payment transactions.",
+                "trigger": "payment_successful",
+                "goal": "payment completion",
+                "pre": "Email, SMS channel must be active.\nTemplates to be created on Netcore."
+            },
+            {
+                "name": "General Alerts & Notifications",
+                "channel": "SMS, App Push",
+                "desc": "We will trigger real-time, APN and SMS alerts to instantly notify users of critical system events, and account actions like an MPIN failure.",
+                "trigger": "pin_failure",
+                "goal": "screen_load [page_name- pin_success]",
+                "pre": "SMS and APN channel must be active.\nApp integration needs to be done.\nTemplates to be created on Netcore."
+            },
+            {
+                "name": "Learning",
+                "channel": "App Push",
+                "desc": "We will send an automated notification to users upon the successful completion of a learning chapter to track their progress and encourage them to start the next lesson.",
+                "trigger": "screen_load",
+                "goal": "screen_load",
+                "pre": "APN channel must be active.\nApp integration needs to be done.\nTemplates to be created on Netcore."
+            },
+            {
+                "name": "Referral",
+                "channel": "App Push",
+                "desc": "We will trigger automated push notifications (APN) to keep users updated on their referral status whenever a referee's status changes to pending, joined, or rewarded.",
+                "trigger": "referral_initiated",
+                "goal": "referral_completed",
+                "pre": "APN channel must be active.\nApp integration needs to be done.\nTemplates to be created on Netcore."
+            },
+            {
+                "name": "User Profile",
+                "channel": "App Push",
+                "desc": "An automated push notification (APN) and SMS will be sent to the users after they successfully add or update their email address or mobile number in their profile.",
+                "trigger": "profile_update",
+                "goal": "NA",
+                "pre": "APN, SMS channel must be active.\nApp integration needs to be done.\nTemplates to be created on Netcore."
+            },
+            {
+                "name": "Consent Revocation, Extension & Expiry Nudging",
+                "channel": "Email",
+                "desc": "SMS and push notifications will be sent to users whenever their account consent is revoked, extended, or approaching expiry.",
+                "trigger": "consent_expiry , consent_extension , consent_revoke",
+                "goal": "NA",
+                "pre": "APN, SMS channel must be active.\nApp integration needs to be done.\nTemplates to be created on Netcore."
+            },
+            {
+                "name": "Drop chase journey",
+                "channel": "SMS, App Push",
+                "desc": "We will send targeted push notifications (APN) and SMS reminders to chase and re-engage users who drop off during the journey until their payment is successfully completed.",
+                "trigger": "payment_initiated",
+                "goal": "payment_successful",
+                "pre": "APN, SMS channel must be active.\nApp integration needs to be done.\nTemplates to be created on Netcore."
+            }
+        ],
+        "events": [],
+        "payMode": "flat",
+        "payFlat": "",
+        "currency": "INR",
+        "emailExtra": {
+            "integration": "",
+            "integrationOther": "",
+            "msgSizeKB": "",
+            "hosting": "",
+            "webhooks": "",
+            "ipPool": "",
+            "domains": "",
+            "domainPurposes": "",
+            "googleDomainRep": "",
+            "esp": "",
+            "perf": {
+                "openRate": "",
+                "clickRate": "",
+                "bounceRate": "",
+                "unsubRate": "",
+                "spamRate": ""
+            },
+            "subProcess": "",
+            "listOverall": "",
+            "listActive": "",
+            "maxVolume": "",
+            "currentIssues": "",
+            "topIsps": ""
+        },
+        "pay1": "",
+        "pay2": "",
+        "pay3": "",
+        "billingDate": "",
+        "billingNote": "",
+        "step": 4,
+        "chSet": [
+            "email",
+            "sms"
+        ],
+        "appSet": [
+            "native"
+        ],
+        "pxSet": [],
+        "projectPlan": {
+            "v": 1,
+            "taskData": [
+                {
+                    "sno": "1",
+                    "title": "Pre Kick Off",
+                    "type": "phase",
+                    "ch": [],
+                    "s": 0,
+                    "d": 2,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "1.1",
+                    "title": "Sales Handover",
+                    "type": "task",
+                    "ch": [],
+                    "s": 0,
+                    "d": 1,
+                    "assignee": "NS"
+                },
+                {
+                    "sno": "1.2",
+                    "title": "BRD & PO",
+                    "type": "task",
+                    "ch": [],
+                    "s": 1,
+                    "d": 1,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "1.3",
+                    "title": "Internal Discovery",
+                    "type": "task",
+                    "ch": [],
+                    "s": 1,
+                    "d": 1,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "1.4",
+                    "title": "Assign Implementation Engineer",
+                    "type": "task",
+                    "ch": [],
+                    "s": 1,
+                    "d": 1,
+                    "assignee": "NO"
+                },
+                {
+                    "sno": "2",
+                    "title": "Client Kick Off & Discovery",
+                    "type": "phase",
+                    "ch": [],
+                    "s": 3,
+                    "d": 5,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "2.1",
+                    "title": "Primary Key Finalized",
+                    "type": "task",
+                    "ch": [],
+                    "s": 3,
+                    "d": 1,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "2.2",
+                    "title": "Use Case Discussion",
+                    "type": "task",
+                    "ch": [],
+                    "s": 3,
+                    "d": 2,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "2.3",
+                    "title": "Tech Feasibility Discussion",
+                    "type": "task",
+                    "ch": [],
+                    "s": 3,
+                    "d": 2,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "2.4",
+                    "title": "Events & Attributes Discussion",
+                    "type": "task",
+                    "ch": [],
+                    "s": 3,
+                    "d": 2,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "2.5",
+                    "title": "Email Discovery",
+                    "type": "task",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 3,
+                    "d": 1,
+                    "assignee": "CM"
+                },
+                {
+                    "sno": "2.5.1",
+                    "title": "Domain Finalization",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 3,
+                    "d": 1,
+                    "assignee": "CM"
+                },
+                {
+                    "sno": "2.5.2",
+                    "title": "Data Clarity Discussion",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 3,
+                    "d": 1,
+                    "assignee": "CM"
+                },
+                {
+                    "sno": "2.6",
+                    "title": "Client App\/Web Access",
+                    "type": "task",
+                    "ch": [],
+                    "s": 4,
+                    "d": 1,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "2.7",
+                    "title": "Event List Acknowledgement",
+                    "type": "task",
+                    "ch": [],
+                    "s": 5,
+                    "d": 1,
+                    "assignee": "NO"
+                },
+                {
+                    "sno": "2.8",
+                    "title": "SOW Internal Sign Off",
+                    "type": "task",
+                    "ch": [],
+                    "s": 5,
+                    "d": 1,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "2.9",
+                    "title": "SOW Client Sign Off",
+                    "type": "task",
+                    "ch": [],
+                    "s": 6,
+                    "d": 2,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "2.10",
+                    "title": "Panel Creation",
+                    "type": "task",
+                    "ch": [],
+                    "s": 6,
+                    "d": 1,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "2.11",
+                    "title": "MOM Client Discovery",
+                    "type": "task",
+                    "ch": [],
+                    "s": 7,
+                    "d": 1,
+                    "assignee": "NP"
+                },
+                {
+                    "sno": "3",
+                    "title": "Integration",
+                    "type": "phase",
+                    "ch": [],
+                    "s": 9,
+                    "d": 17,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "3.1",
+                    "title": "Implementation Engineer Intro & Assign",
+                    "type": "task",
+                    "ch": [],
+                    "s": 9,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "3.2",
+                    "title": "App Push Implementation",
+                    "type": "task",
+                    "ch": [
+                        "App Push"
+                    ],
+                    "s": 9,
+                    "d": 8,
+                    "assignee": "NI"
+                },
+                {
+                    "sno": "3.2.1",
+                    "title": "Implementation Engineer Intro\/Assign",
+                    "type": "sub",
+                    "ch": [
+                        "App Push"
+                    ],
+                    "s": 9,
+                    "d": 1,
+                    "assignee": "NI"
+                },
+                {
+                    "sno": "3.2.2",
+                    "title": "Android Walkthrough & Basic Setup",
+                    "type": "sub",
+                    "ch": [
+                        "App Push"
+                    ],
+                    "s": 10,
+                    "d": 2,
+                    "assignee": "NI"
+                },
+                {
+                    "sno": "3.2.3",
+                    "title": "Push Notification Setup (Android)",
+                    "type": "sub",
+                    "ch": [
+                        "App Push"
+                    ],
+                    "s": 12,
+                    "d": 2,
+                    "assignee": "CT"
+                },
+                {
+                    "sno": "3.2.4",
+                    "title": "iOS Walkthrough & Basic Setup",
+                    "type": "sub",
+                    "ch": [
+                        "App Push"
+                    ],
+                    "s": 14,
+                    "d": 2,
+                    "assignee": "NI"
+                },
+                {
+                    "sno": "3.2.5",
+                    "title": "Push Notification Setup (iOS)",
+                    "type": "sub",
+                    "ch": [
+                        "App Push"
+                    ],
+                    "s": 16,
+                    "d": 2,
+                    "assignee": "CT"
+                },
+                {
+                    "sno": "3.2.6",
+                    "title": "Events Integration (App)",
+                    "type": "sub",
+                    "ch": [
+                        "App Push"
+                    ],
+                    "s": 18,
+                    "d": 2,
+                    "assignee": "CT"
+                },
+                {
+                    "sno": "3.3",
+                    "title": "SMS Implementation",
+                    "type": "task",
+                    "ch": [
+                        "SMS"
+                    ],
+                    "s": 9,
+                    "d": 3,
+                    "assignee": "NI"
+                },
+                {
+                    "sno": "3.3.1",
+                    "title": "Ask DLT Details",
+                    "type": "sub",
+                    "ch": [
+                        "SMS"
+                    ],
+                    "s": 9,
+                    "d": 1,
+                    "assignee": "NI"
+                },
+                {
+                    "sno": "3.3.2",
+                    "title": "DLT Details Received",
+                    "type": "sub",
+                    "ch": [
+                        "SMS"
+                    ],
+                    "s": 10,
+                    "d": 2,
+                    "assignee": "NI"
+                },
+                {
+                    "sno": "3.4",
+                    "title": "Email Implementation",
+                    "type": "task",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 9,
+                    "d": 15,
+                    "assignee": "NI"
+                },
+                {
+                    "sno": "3.4.1",
+                    "title": "DE Team Approval & Onboarding",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 9,
+                    "d": 3,
+                    "assignee": "NC"
+                },
+                {
+                    "sno": "3.4.2",
+                    "title": "DNS Record Sharing",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 12,
+                    "d": 1,
+                    "assignee": "NC"
+                },
+                {
+                    "sno": "3.4.3",
+                    "title": "DNS Record Implementation",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 13,
+                    "d": 2,
+                    "assignee": "NC"
+                },
+                {
+                    "sno": "3.4.4",
+                    "title": "DNS Verification by DE Team",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 15,
+                    "d": 2,
+                    "assignee": "NC"
+                },
+                {
+                    "sno": "3.4.5",
+                    "title": "Data Upload & Verification",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 17,
+                    "d": 2,
+                    "assignee": "NC"
+                },
+                {
+                    "sno": "3.4.6",
+                    "title": "Warm Up Plan Shared",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 19,
+                    "d": 1,
+                    "assignee": "NC"
+                },
+                {
+                    "sno": "3.4.7",
+                    "title": "AMP Domain Whitelist",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 20,
+                    "d": 1,
+                    "assignee": "NC"
+                },
+                {
+                    "sno": "3.4.8",
+                    "title": "AMP Template From Client",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 21,
+                    "d": 3,
+                    "assignee": "NC"
+                },
+                {
+                    "sno": "4",
+                    "title": "Product Configuration & Testing",
+                    "type": "phase",
+                    "ch": [],
+                    "s": 25,
+                    "d": 6,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "4.1",
+                    "title": "Mobile Code Review",
+                    "type": "task",
+                    "ch": [
+                        "App Push"
+                    ],
+                    "s": 25,
+                    "d": 4,
+                    "assignee": "NI"
+                },
+                {
+                    "sno": "4.1.1",
+                    "title": "Staging APK\/IPA Received",
+                    "type": "sub",
+                    "ch": [
+                        "App Push"
+                    ],
+                    "s": 25,
+                    "d": 2,
+                    "assignee": "NI"
+                },
+                {
+                    "sno": "4.1.2",
+                    "title": "Android Code Review",
+                    "type": "sub",
+                    "ch": [
+                        "App Push"
+                    ],
+                    "s": 25,
+                    "d": 2,
+                    "assignee": "NI"
+                },
+                {
+                    "sno": "4.1.3",
+                    "title": "iOS Code Review",
+                    "type": "sub",
+                    "ch": [
+                        "App Push"
+                    ],
+                    "s": 27,
+                    "d": 2,
+                    "assignee": "NI"
+                },
+                {
+                    "sno": "4.1.4",
+                    "title": "Staging APK Successfully Tested",
+                    "type": "sub",
+                    "ch": [
+                        "App Push"
+                    ],
+                    "s": 29,
+                    "d": 2,
+                    "assignee": "NI"
+                },
+                {
+                    "sno": "4.2",
+                    "title": "Email Setup & Review",
+                    "type": "task",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 25,
+                    "d": 4,
+                    "assignee": "NI"
+                },
+                {
+                    "sno": "4.2.1",
+                    "title": "Template Uploaded",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 25,
+                    "d": 3,
+                    "assignee": "NI"
+                },
+                {
+                    "sno": "4.2.2",
+                    "title": "Send Test Email to DE",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 28,
+                    "d": 1,
+                    "assignee": "NI"
+                },
+                {
+                    "sno": "4.3",
+                    "title": "Use Case Testing",
+                    "type": "task",
+                    "ch": [],
+                    "s": 29,
+                    "d": 3,
+                    "assignee": "NC"
+                },
+                {
+                    "sno": "4.3.1",
+                    "title": "SMS Use Case Setup",
+                    "type": "sub",
+                    "ch": [
+                        "SMS"
+                    ],
+                    "s": 29,
+                    "d": 1,
+                    "assignee": "NC"
+                },
+                {
+                    "sno": "4.3.2",
+                    "title": "App Push Use Case Setup",
+                    "type": "sub",
+                    "ch": [
+                        "App Push"
+                    ],
+                    "s": 29,
+                    "d": 1,
+                    "assignee": "NC"
+                },
+                {
+                    "sno": "4.3.3",
+                    "title": "Email Use Case Setup",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 29,
+                    "d": 1,
+                    "assignee": "NC"
+                },
+                {
+                    "sno": "4.4",
+                    "title": "Product Config & Testing Completed",
+                    "type": "task",
+                    "ch": [],
+                    "s": 30,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "5",
+                    "title": "Use Case Setup & User Training",
+                    "type": "phase",
+                    "ch": [],
+                    "s": 31,
+                    "d": 3,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "5.1",
+                    "title": "Template Creation",
+                    "type": "task",
+                    "ch": [],
+                    "s": 31,
+                    "d": 3,
+                    "assignee": "T"
+                },
+                {
+                    "sno": "5.2",
+                    "title": "Campaign Creation",
+                    "type": "task",
+                    "ch": [],
+                    "s": 34,
+                    "d": 1,
+                    "assignee": "T"
+                },
+                {
+                    "sno": "5.3",
+                    "title": "Journey Creation",
+                    "type": "task",
+                    "ch": [],
+                    "s": 35,
+                    "d": 1,
+                    "assignee": "T"
+                },
+                {
+                    "sno": "5.4",
+                    "title": "Dashboard Overview",
+                    "type": "task",
+                    "ch": [],
+                    "s": 32,
+                    "d": 1,
+                    "assignee": "T"
+                },
+                {
+                    "sno": "5.5",
+                    "title": "User Training Completed",
+                    "type": "task",
+                    "ch": [],
+                    "s": 33,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "6",
+                    "title": "Go Live",
+                    "type": "phase",
+                    "ch": [],
+                    "s": 34,
+                    "d": 23,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "6.1",
+                    "title": "Use Case Go Live",
+                    "type": "task",
+                    "ch": [],
+                    "s": 34,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "6.1.1",
+                    "title": "SMS Go Live",
+                    "type": "sub",
+                    "ch": [
+                        "SMS"
+                    ],
+                    "s": 34,
+                    "d": 1,
+                    "assignee": "T"
+                },
+                {
+                    "sno": "6.1.2",
+                    "title": "App Push Go Live",
+                    "type": "sub",
+                    "ch": [
+                        "App Push"
+                    ],
+                    "s": 34,
+                    "d": 1,
+                    "assignee": "T"
+                },
+                {
+                    "sno": "6.1.3",
+                    "title": "Email Go Live",
+                    "type": "sub",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 34,
+                    "d": 1,
+                    "assignee": "T"
+                },
+                {
+                    "sno": "6.2",
+                    "title": "Internal Warmup",
+                    "type": "task",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 35,
+                    "d": 3,
+                    "assignee": "T"
+                },
+                {
+                    "sno": "6.3",
+                    "title": "Warmup Campaign Started",
+                    "type": "task",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 38,
+                    "d": 12,
+                    "assignee": "T"
+                },
+                {
+                    "sno": "6.4",
+                    "title": "Warmup Scale-Up & Completion",
+                    "type": "task",
+                    "ch": [
+                        "Email"
+                    ],
+                    "s": 50,
+                    "d": 4,
+                    "assignee": "T"
+                },
+                {
+                    "sno": "6.5",
+                    "title": "Performance Review",
+                    "type": "task",
+                    "ch": [],
+                    "s": 47,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "6.6",
+                    "title": "Review & Feedback",
+                    "type": "task",
+                    "ch": [],
+                    "s": 55,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "7",
+                    "title": "Handover",
+                    "type": "phase",
+                    "ch": [],
+                    "s": 52,
+                    "d": 4,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "7.1",
+                    "title": "Handover Document",
+                    "type": "task",
+                    "ch": [],
+                    "s": 52,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "7.2",
+                    "title": "Handover Email Raised",
+                    "type": "task",
+                    "ch": [],
+                    "s": 52,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "7.3",
+                    "title": "Internal Handover Call",
+                    "type": "task",
+                    "ch": [],
+                    "s": 53,
+                    "d": 1,
+                    "assignee": "MB"
+                },
+                {
+                    "sno": "7.4",
+                    "title": "CSM Introduction Call",
+                    "type": "task",
+                    "ch": [],
+                    "s": 54,
+                    "d": 2,
+                    "assignee": "MB"
+                }
+            ],
+            "taskStatuses": [],
+            "baselines": [],
+            "currentPacing": "normal",
+            "comments": null,
+            "form": {
+                "customer": "Experian",
+                "projname": "Experian — Onboarding",
+                "pm": "Shipra Choudhary",
+                "status": "Proposed",
+                "template": "custom",
+                "start": "2026-06-25",
+                "end": "2026-08-19"
+            }
+        }
+    }
+}
