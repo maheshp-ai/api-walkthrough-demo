@@ -8,7 +8,7 @@ from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 # CONFIG (Same key must be used in decrypt.py)
 # ==========================================================
 
-KEY_B64 = "pE5nm9GhrRFNRjCanEitQtMV4lyHhNrgD/6GvlZloHE="
+KEY_B64 = "dABnt8YorIRFJaTinOptEtRA3poBrBrh22tjulHltyg=="
 SECRET_KEY = base64.b64decode(KEY_B64)
 
 if len(SECRET_KEY) != 32:
