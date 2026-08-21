@@ -56,7 +56,7 @@ python3 aes256_data_encryption_script.py '[{
 
   `Encrypted String (Base64): ENtfL3peNnIzXzHBgHqb9bIOoundUGk9scPyPoKrwinCalrrfXZUnm3bNiGBdV3/A+FoqfTLReN5nkr31iQ8Jn9kSeoWlkGeAbsIZUrRsbhB36vzkKGQW12zp/KMBk5tMPlXScHSwhM0GP8lPejtWMsVNbhsOGsPGdW6rY4ZNaFFhyZq3rJIH19HS0f65yVfFXuvLuzoZCudsLa/XRZTZjEhNQobsVq35pxtZpdhl3Tdy7k0rSnbHkIHZ8RMtH22nOpwfbTh+N37T4nI8N0PtBKttwzrHD7t3llNQruhIykttprqAYdDrZF8h4XzQHsNH1h4zck2bUVHY+tSvQIUAAm2xEdpRkTjRCaXJsMql3J0zUAYSorBsS9ncYNeuNKD7JwlLjFsbquVVmZCW3PV+tT/ftSy7u9L89ChZZsl2LaRa1NPpm3AvjrsJQ6Vbo10YhH9dDegYITLJ81qskFBP1uz/tJlxIQlSn/OPeTEXD/cFie2eJjG/LLi+s91cqeWi3vstC3O+e6pni2yZMIP/V0tnFkHzlQD9hamsxgTQGs=`
 
-- Additionally the shared Python script also tests for decrypting the data. So the resultant would also show the decrypted payload as well.
+- Additionally the shared [Python script](script/aes256_gcm_decryption_script.py) also tests for decrypting the data. So the resultant would also show the decrypted payload as well.
 
 - Key points to remember in the above payload
   - asset_id must be picked from the panel.
