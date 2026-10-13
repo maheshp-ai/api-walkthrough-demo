@@ -20,7 +20,7 @@ Follow the below steps for encryoting the data and pushing to CE dashboard.
 
 Generate a SECRET_KEY on your system and share the data with us. The KEY will be configured in our backend post which you can continue with the payload encryption and sending the encrypted data to CE dashboard.
 
-- Here is a [Python script](script/aes256_key_iv_generator_script.py) which can generate the SECRET_KEY.
+- Here is a [Python script](script/AES256_KEY_generator_V5.py) which can generate the SECRET_KEY.
 
 - To run the script use the command
 
