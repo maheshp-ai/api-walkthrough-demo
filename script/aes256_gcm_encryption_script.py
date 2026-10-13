@@ -8,6 +8,7 @@ from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 # CONFIG (Same key must be used in decrypt.py)
 # ==========================================================
 
+#Use your generated encryption key
 KEY_B64 = "dABnt8YorIRFJaTinOptEtRA3poBrBrh22tjulHltyg=="
 SECRET_KEY = base64.b64decode(KEY_B64)
 
