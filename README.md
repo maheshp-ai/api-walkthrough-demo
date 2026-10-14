@@ -20,7 +20,7 @@ Follow the below steps for encryoting the data and pushing to CE dashboard.
 
 Generate a SECRET_KEY on your system and share the data with us. The KEY will be configured in our backend post which you can continue with the payload encryption and sending the encrypted data to CE dashboard.
 
-- Here is a [Python script](script/AES256_KEY_generator_V5.py) which can generate the SECRET_KEY.
+- Here is a [Python script](script/AES256_KEY_GENERATOR_V5.py) which can generate the SECRET_KEY.
 
 - To run the script use the command
 
@@ -32,7 +32,7 @@ Now the generated key can be used to encrypt the payload data.
 
 # Step 2
 
-- Here is a [Python script](script/aes256_gcm_encryption_script.py) which can be used to encrypt the payload data.
+- Here is a [Python script](script/AES256_GCM_ENCRYPTION_SCRIPT.py) which can be used to encrypt the payload data.
 
 - Sharing the sample usage of the script to encrypt data.
 
@@ -56,7 +56,7 @@ python3 aes256_gcm_encryption_script.py '[{
 
   `Encrypted String (Base64): ENtfL3peNnIzXzHBgHqb9bIOoundUGk9scPyPoKrwinCalrrfXZUnm3bNiGBdV3/A+FoqfTLReN5nkr31iQ8Jn9kSeoWlkGeAbsIZUrRsbhB36vzkKGQW12zp/KMBk5tMPlXScHSwhM0GP8lPejtWMsVNbhsOGsPGdW6rY4ZNaFFhyZq3rJIH19HS0f65yVfFXuvLuzoZCudsLa/XRZTZjEhNQobsVq35pxtZpdhl3Tdy7k0rSnbHkIHZ8RMtH22nOpwfbTh+N37T4nI8N0PtBKttwzrHD7t3llNQruhIykttprqAYdDrZF8h4XzQHsNH1h4zck2bUVHY+tSvQIUAAm2xEdpRkTjRCaXJsMql3J0zUAYSorBsS9ncYNeuNKD7JwlLjFsbquVVmZCW3PV+tT/ftSy7u9L89ChZZsl2LaRa1NPpm3AvjrsJQ6Vbo10YhH9dDegYITLJ81qskFBP1uz/tJlxIQlSn/OPeTEXD/cFie2eJjG/LLi+s91cqeWi3vstC3O+e6pni2yZMIP/V0tnFkHzlQD9hamsxgTQGs=`
 
-- Additionally the shared [Python script](script/aes256_gcm_decryption_script.py) also tests for decrypting the data. So the resultant would also show the decrypted payload as well.
+- Additionally the shared [Python script](script/AES256_GCM_DECRYPTION_SCRIPT.py) also tests for decrypting the data. So the resultant would also show the decrypted payload as well.
 
 - Key points to remember in the above payload
   - asset_id must be picked from the panel.
