@@ -1,7 +1,7 @@
 import java.security.SecureRandom;
 import java.util.Base64;
 
-public class GenerateCredentials {
+public class AES256_KEY_GENERATOR_v5 {
 
     public static void main(String[] args) {
         // 1. Generate cryptographically secure random bytes
