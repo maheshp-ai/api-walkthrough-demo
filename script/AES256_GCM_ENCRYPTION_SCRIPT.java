@@ -6,7 +6,7 @@ import javax.crypto.SecretKey;
 import javax.crypto.spec.GCMParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
-public class Encrypt {
+public class AES256_GCM_ENCRYPTION_SCRIPT {
 
     // ==========================================================
     // CONFIG (32-byte key for AES-256)
